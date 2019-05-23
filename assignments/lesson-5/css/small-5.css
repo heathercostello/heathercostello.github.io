@@ -100,3 +100,7 @@ h2 {text-align: center;font-size:2rem;text-shadow:3px 3px 5px #777;}
         padding: 1rem;
         box-shadow: 0 0 30px #fff;
     }
+
+    .motto {
+        bottom: 25px;
+    }
