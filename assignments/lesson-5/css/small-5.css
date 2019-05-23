@@ -73,6 +73,11 @@ header img {
     height: auto;
     float: left;
     }
+main img {
+    width: 820px;
+    height:auto;
+}
+
 footer {
     font-size: 1.25rem;
     font-family: 'Oswald', sans-serif;
