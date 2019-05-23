@@ -48,7 +48,7 @@ h1 {
       
 .menu:hover .dropmenu {background-color: #B5C7DD;}
 
-header, main, footer {
+header, main, footer, article {
     margin: 0rem auto;
     padding: 1rem;
     max-width: 450px;
