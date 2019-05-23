@@ -99,8 +99,8 @@ h2 {
     margin: 10px auto;
     background-color: #eeeee;
     border: 1px solid #333;
-    max-width: 450px;
-    height: 100px;
+    width: 450px;
+    height: 200px;
 }
     
  .weatherstats {
