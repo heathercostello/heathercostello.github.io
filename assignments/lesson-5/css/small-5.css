@@ -67,6 +67,7 @@ main {
     background-color: #506F82;
     color: whitesmoke;
     text-align: center;
+    max-width: 450px;
 }
 header img {
     width: 80px;
