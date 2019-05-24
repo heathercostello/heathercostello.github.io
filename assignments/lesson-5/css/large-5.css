@@ -1,2 +1,84 @@
+@media screen and (min-width: 650px) {
 
+    .navigation li {
+        float: left;
+      }
+      
+      .navigation li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 5px 15px;
+        text-decoration: none;
+        font-size: 17px;
+        height: 20px;
+        position: relative;
+        bottom: 15px;
+      }
+
+      a:active { 
+        background-color: yellow;
+      }
+
+    .dropmenu { display: none;}
+
+    .menu { display: block;
+        background-color: rgb(61, 83, 97);
+    }
+
+    .dropdown-content {
+        display: block;
+        background-color: rgb(61, 83, 97);
+    }
+
+      .particle article img {
+          float: right;
+          max-width: 300px;
+          position: relative;
+          top: 30px;
+          padding:20px
+      }
+
+      .particle {
+          text-align: -webkit-left;
+      }
+
+      .contact img {
+          float: right;
+          max-width: 300px;
+          position: relative;
+        bottom: 155px;
+        clear: both;
+      }
+
+      .contact {
+          text-align: -webkit-left;
+      }
+
+      .footer p {
+          text-align: center;
+      }
+
+      .fiveday {
+          display: inline;
+      }
+      table, th, td {
+        border: 1px solid black;
+        text-align: center;
+      }
+
+      table {
+          max-width: 600px;
+          padding: 10px;
+      }
+
+      .fiveday h4 {
+          text-align: center;
+          line-height: 2px;
+      }
+
+      th { 
+          background-color: lightblue;
+      }
+}
     
