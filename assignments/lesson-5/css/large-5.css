@@ -24,6 +24,7 @@
 
     .menu { display: block;
         background-color: rgb(61, 83, 97);
+        bottom: 15px;
     }
 
     .dropdown-content {
@@ -55,12 +56,13 @@
           text-align: -webkit-left;
       }
 
-      .footer p {
-          text-align: center;
+      .footer {
+        text-align: center;
       }
 
       .fiveday {
           display: inline;
+          background-color: blueviolet;
       }
       table, th, td {
         border: 1px solid black;
@@ -69,7 +71,7 @@
 
       table {
           max-width: 600px;
-          padding: 10px;
+          padding: 5px;
       }
 
       .fiveday h4 {
@@ -78,7 +80,11 @@
       }
 
       th { 
-          background-color: lightblue;
+          background-color: rgba(104, 21, 0, 0.76);
+      }
+
+      header h2 {
+        text-align: center;
       }
 }
     

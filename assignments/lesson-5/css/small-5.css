@@ -129,7 +129,7 @@ h2 {
 .contact {
     width: 600px;
     text-align: center;
-    background-color: #B5C7DD;
+    background-color: #506F82;
     margin: auto;
     line-height: 1;
     padding: 1em;
@@ -150,4 +150,10 @@ h2 {
 
 .topnav {
     display: none;
+}
+
+.motto {
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
 }
