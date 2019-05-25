@@ -16,7 +16,7 @@
         bottom: 15px;
       }
 
-      a:active { 
+      .navigation li a:active { 
         background-color: yellow;
       }
 
