@@ -56,10 +56,12 @@ header, main, footer, article {
     padding: 1rem;
     width: 600px;
     }
+
 header, footer, footer a {
     text-align: center;
     color: whitesmoke;
     }
+
 header {
     background-color: rgb(104, 21, 0, 0.925);
     font-family: 'Oswald', sans-serif;
@@ -157,3 +159,7 @@ h2 {
     position: relative;
     bottom: 20px;
 }
+
+.navigation li a:active { 
+    background-color: yellow;
+  }
