@@ -84,7 +84,8 @@
       }
 
       header h2 {
-        text-align: center;
+          position: relative;
+          right: 38px;
       }
 }
     
