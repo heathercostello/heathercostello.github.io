@@ -159,7 +159,3 @@ h2 {
     position: relative;
     bottom: 20px;
 }
-
-.navigation li a:active { 
-    background-color: yellow;
-  }
