@@ -159,3 +159,7 @@ h2 {
     position: relative;
     bottom: 20px;
 }
+
+.navigation .active {
+    background-color: burlywood;
+  }
