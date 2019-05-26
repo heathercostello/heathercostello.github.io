@@ -16,10 +16,6 @@
         bottom: 15px;
       }
 
-      .navigation li a:active { 
-        background-color: yellow;
-      }
-
     .dropmenu { display: none;}
 
     .menu { display: block;
@@ -87,5 +83,10 @@
           position: relative;
           right: 38px;
       }
-}
+      
+      .navigation .active {
+        background-color: burlywood;
+      }
+    }
+
     
