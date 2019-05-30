@@ -1,0 +1,167 @@
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Ubuntu, sans-serif;
+}
+
+h1 {
+    font-size: 1.2rem;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    }
+
+.dropmenu {
+        background-color: #506f82;
+        color: white;
+        padding: 16px;
+        font-size: 20px;
+        border: none;
+        width: 600px;
+        margin: auto;
+        }
+      
+.menu {
+        position: relative;
+        display: inline-block;
+        }
+
+.dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 600px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+      
+.dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+      
+.dropdown-content a:hover {background-color: #B5C7DD;
+                            margin: auto;}
+      
+.menu:hover .dropdown-content {display: block;}
+      
+.menu:hover .dropmenu {background-color: #B5C7DD;
+                         margin: auto;}
+
+header, main, footer, article {
+    margin: 0rem auto;
+    padding: 1rem;
+    width: 600px;
+    }
+
+header, footer, footer a {
+    text-align: center;
+    color: whitesmoke;
+    }
+
+header {
+    background-color: rgb(104, 21, 0, 0.925);
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+main {
+    background-color: #506F82;
+    color: whitesmoke;
+    text-align: center;
+}
+header img {
+    width: 80px;
+    height: auto;
+    float: left;
+    }
+
+footer {
+    font-size: 1.25rem;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(104, 21, 0, 0.925);
+    }
+
+main {
+    width: 600px;
+    margin:0 auto;
+}
+    
+h2 {
+    text-align: center;
+    font-size:2rem;
+    text-shadow:3px 3px 5px #777;}
+    
+.town {
+    margin: 10px auto;
+    position: relative;
+}
+
+.hero-pic {
+    margin: 10px auto;
+    background-color: #eeeeee;
+    border: 1px solid #333;
+    width: 600px;
+    height: 200px;
+}
+    
+ .weatherstats {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        background: radial-gradient(rgb(104, 21, 0, 0.925), #777);
+        border: 1px solid white;
+        padding: 1rem;
+        box-shadow: 0 0 30px #fff;
+        font-size: 11px;
+        line-height: 1;
+    }
+
+.particle {
+    width: 631px;
+    text-align: left;
+    background-color: rgba(179, 97, 77, 0.925);
+    margin: auto;
+    line-height: 1.5;
+}
+
+.contact {
+    width: 600px;
+    text-align: center;
+    background-color: #506F82;
+    margin: auto;
+    line-height: 1;
+    padding: 1em;
+    color: white;
+}
+
+.contact img {
+    max-width: 600px;
+}
+  
+.particle article img {
+    max-width: 600px;
+}
+
+.fiveday {
+    display: none;
+}
+
+.topnav {
+    display: none;
+}
+
+.motto {
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+.navigation .active {
+    background-color: burlywood;
+  }
+
+    
