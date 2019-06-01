@@ -100,12 +100,16 @@ h2 {
     position: relative;
 }
 
-.hero-pic {
+.hero-pic-small {
     margin: 10px auto;
     background-color: #eeeeee;
     border: 1px solid #333;
     width: 600px;
     height: 200px;
+}
+
+.hero-pic-large {
+    display: none;
 }
     
  .weatherstats {

@@ -35,7 +35,8 @@
         <main>
              <h2>Preston Idaho</h2> 
              <div class="town">
-            <img class="hero-pic" src="images/field.png" alt="hero image">
+            <img class="hero-pic-large" src="images/heroimglarge.jpg" alt="hero image large">
+            <img class="hero-pic-small" src="images/heroimgsmall.jpg" alt="hero image small">
             <section class="weatherstats">
            <h3>Weather Summary</h3>
            <p>Currently: <span
@@ -49,7 +50,7 @@
     </main>
     <div class="fiveday">
         <h4>Five Day Forecast</h4>
-        <table style="width:100%">
+        <table class="tbl" style="width:100%">
         <tr>
             <th>Mon</th>
             <th>Tues</th>
@@ -86,9 +87,10 @@
             <a href="https://www.google.com/maps/place/Preston,+ID+83263/data=!4m2!3m1!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f?sa=X&ved=2ahUKEwj06uH68bLiAhXF6Z4KHVTaAnUQ8gEwAHoECAsQAQ"><img src="images/map.png" alt="Map Image"></a>
         </section>
         <footer>
-            <p>&copy; |
-                2019 |
-                weather4you | Heather Costello<br>
+            <p>&copy; | 
+                <script src="scripts/currentdate.js"><p id="showDate"></p></script> | 
+                weather4you | 
+                Heather Costello<br>
                 </p>
         </footer>
     </body>

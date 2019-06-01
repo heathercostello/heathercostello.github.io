@@ -68,12 +68,16 @@
       table {
           max-width: 600px;
           padding: 5px;
-          align="center";
+          align-content: center;
       }
 
       .fiveday h4 {
           text-align: center;
           line-height: 2px;
+      }
+
+      .fiveday {
+          align-content: center;
       }
 
       th { 
@@ -87,5 +91,13 @@
       
       .navigation .active {
         background-color: burlywood;
+      }
+
+      .tbl {
+          margin: auto;
+      }
+
+      .hero-pic-small {
+          display: none;
       }
     }
