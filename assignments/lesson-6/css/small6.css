@@ -95,21 +95,15 @@ h2 {
     font-size:2rem;
     text-shadow:3px 3px 5px #777;}
     
-.town {
-    margin: 10px auto;
-    position: relative;
-}
+    .town {
+        margin: 10px auto;
+        position: relative;
+    }
 
-.hero-pic-small {
+.heroimg {
     margin: 10px auto;
     background-color: #eeeeee;
     border: 1px solid #333;
-    width: 600px;
-    height: 200px;
-}
-
-.hero-pic-large {
-    display: none;
 }
     
  .weatherstats {
