@@ -15,10 +15,11 @@
             <img src="images/Weather-icon.png" alt="logo">
             <h2>Weather For You</h2>
             <div class="motto">Weather forecasts that you can trust</div>
+           
             <div class="menu">
-                    <button class="dropmenu">Menu</button>
+                    <nav>
+                <button class="dropmenu">&#9776;</button>
                     <div class="dropdown-content">
-                        <nav>
                         <ul class="navigation" style="list-style-type:none;">
                             <li><a href="#">Home</a></li>
                             <li><a class="active" href="https://heathercostello.github.io/assignments/lesson-5/preston-5.html">Preston</a></li>
@@ -29,16 +30,15 @@
                         </ul>
                         </nav>
                     </div>
-                  </div>
+                 
+                </div>
         </header>
         </section>
         
         <main>
              <h2>Preston Idaho</h2> 
         <div class="town">
-            <figure class="heroimg">
-            <img src="images/heroimgsmall.jpg" alt="small img" sizes="100vw" srcset="images/heroimglarge" width="651">
-        </figure>
+            <img class="heroimg" src="images/heroimglarge.jpg" alt="large img">
             <section class="weatherstats">
            <h3>Weather Summary</h3>
            <p>Currently: <span
@@ -89,9 +89,8 @@
             <a href="https://www.google.com/maps/place/Preston,+ID+83263/data=!4m2!3m1!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f?sa=X&ved=2ahUKEwj06uH68bLiAhXF6Z4KHVTaAnUQ8gEwAHoECAsQAQ"><img src="images/map.jpg" alt="Map Image"></a>
         </section>
         <footer>
-            <p id="ff">&copy;| 
-                 <p id="showDate"></p>
-                | 
+            <p>&copy;| 
+                <span id="showDate"></span> | 
                 weather4you | 
                 Heather Costello
                 </p>

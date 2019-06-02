@@ -20,14 +20,27 @@ h1 {
         border: none;
         width: 600px;
         margin: auto;
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 600px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
         }
+
+.dropmenu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
       
 .menu {
         position: relative;
         display: inline-block;
         }
 
-.dropdown-content {
+.dropmenu {
         display: none;
         position: absolute;
         background-color: #f1f1f1;
@@ -36,17 +49,17 @@ h1 {
         z-index: 1;
         }
       
-.dropdown-content a {
+.dropmenu a {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
         }
       
-.dropdown-content a:hover {background-color: #B5C7DD;
+.dropmenu a:hover {background-color: #B5C7DD;
                             margin: auto;}
       
-.menu:hover .dropdown-content {display: block;}
+.menu:hover .dropmenu {display: block;}
       
 .menu:hover .dropmenu {background-color: #B5C7DD;
                          margin: auto;}
@@ -86,6 +99,13 @@ footer {
     margin: auto;
     }
 
+footer p, footer div {
+    text-align: center;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 main {
     width: 600px;
     margin:0 auto;
@@ -105,6 +125,7 @@ h2 {
     margin: 10px auto;
     background-color: #eeeeee;
     border: 1px solid #333;
+    width: 600px;
 }
     
  .weatherstats {
@@ -161,10 +182,9 @@ h2 {
 
 .navigation .active {
     background-color: burlywood;
-  }
+  }s
 
-  #ff {
-      align-content: center;
-  }
+  #showDate { display: inline-block;
+}
 
     
