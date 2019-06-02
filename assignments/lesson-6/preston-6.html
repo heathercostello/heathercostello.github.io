@@ -6,6 +6,7 @@
         <title>Preston Page</title>
         <meta name="description" content="Preston">
         <link href="https://fonts.googleapis.com/css?family=Oswald%7cSource+Sans+Pro&display=swapLinks to an external site." rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/small6.css">
         <link rel="stylesheet" href="css/large6.css">
     </head>
@@ -38,7 +39,11 @@
         <main>
              <h2>Preston Idaho</h2> 
         <div class="town">
-            <img class="heroimg" src="images/heroimglarge.jpg" alt="large img">
+            <picture class="heroimg">
+            <source srcset="images/heroimgsmall.jpg" media=" (max-width: 599px) ">
+                <source srcset="images/heroimglarge.jpg" media=" (min-width: 600px) ">
+                    <img src="images/heroimglarge.jpg" alt="hero img">
+                </picture> 
             <section class="weatherstats">
            <h3>Weather Summary</h3>
            <p>Currently: <span
