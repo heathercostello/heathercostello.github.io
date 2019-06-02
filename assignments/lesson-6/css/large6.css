@@ -1,10 +1,10 @@
 @media screen and (min-width: 650px) {
 
-    .navigation li {
+    #navigation li {
         float: left;
       }
       
-      .navigation li a {
+      #navigation li a {
         display: block;
         color: white;
         text-align: center;
@@ -91,7 +91,7 @@
           right: 38px;
       }
       
-      .navigation .active {
+      #navigation .active {
         background-color: burlywood;
       }
 
