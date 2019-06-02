@@ -52,7 +52,7 @@ h1 {
                          margin: auto;}
 
 header, main, footer, article {
-    margin: 0rem auto;
+    margin: auto;
     padding: 1rem;
     width: 600px;
     }
@@ -80,9 +80,10 @@ header img {
     }
 
 footer {
-    font-size: 1.25rem;
+    font-size: .9rem;
     font-family: 'Oswald', sans-serif;
     background-color: rgb(104, 21, 0, 0.925);
+    margin: auto;
     }
 
 main {
@@ -160,6 +161,10 @@ h2 {
 
 .navigation .active {
     background-color: burlywood;
+  }
+
+  #ff {
+      align-content: center;
   }
 
     
