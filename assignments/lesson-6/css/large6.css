@@ -55,6 +55,8 @@
     footer {
         text-align: center;
         margin: auto;
+        margin-right: auto;
+        margin-left: auto;
       }
 
       .fiveday {
@@ -95,5 +97,10 @@
 
       .tbl {
           margin: auto;
+      }
+
+      picture .heroimg {
+        margin: auto;
+
       }
     }
