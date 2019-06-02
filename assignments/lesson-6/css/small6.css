@@ -1,7 +1,7 @@
 body {
     font-size: 16px;
     line-height: 32px;
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -64,7 +64,7 @@ header, footer, footer a {
 
 header {
     background-color: rgb(104, 21, 0, 0.925);
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     text-align: center;
 }
@@ -81,7 +81,7 @@ header img {
 
 footer {
     font-size: .9rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: rgb(104, 21, 0, 0.925);
     margin: auto;
     }
