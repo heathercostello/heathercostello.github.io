@@ -113,6 +113,7 @@ h2 {
     background-color: #eeeeee;
     border: 1px solid #333;
     width: 600px;
+    height:auto;
 }
     
  .weatherstats {
@@ -174,4 +175,7 @@ h2 {
   #showDate { display: inline-block;
 }
 
+.large {
+    width:500px;
+}
     
