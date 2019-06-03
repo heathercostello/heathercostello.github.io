@@ -182,3 +182,8 @@ h2 {
 .original {
     width: 600px;
 }
+
+.foot{
+    margin:auto;
+    text-align:center;
+}
