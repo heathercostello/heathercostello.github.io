@@ -188,7 +188,7 @@ h2 {
     width: 600px;
 }
 
-.foot{
+footer .foot{
     margin:auto;
     text-align:center;
 }
@@ -197,9 +197,11 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: .1px;
+    
 }
 
 .gallery img {
     width: 400px;
     height: 200px;
 }
+
