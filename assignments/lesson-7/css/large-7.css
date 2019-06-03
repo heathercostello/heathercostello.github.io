@@ -1,4 +1,4 @@
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 768px) {
 
     #navigation li {
         float: left;
@@ -18,7 +18,9 @@
 
     .dropmenu { display: none;}
 
-    .menu { display: block;
+    .menu { 
+        display: flex;
+        flex-direction: row;
         background-color: rgb(61, 83, 97);
         bottom: 15px;
     }
@@ -102,23 +104,25 @@
 
       picture .heroimg {
         margin: auto;
+        width: 100%;
+      }
 
+      .heroimg img {
+        width: 100%;
       }
 
       .gallery {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 0 4px;
-      }
-
-      .gallery {
-        flex: 25%;
-        max-width: 25%;
-        padding: 0 4px;
-      }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
       .header {
         display: flex;
       }
+
+      .gallery img {
+        width: 400px;
+        height: 200px;
+    }
+    
     }
