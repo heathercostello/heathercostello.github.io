@@ -112,7 +112,7 @@ h2 {
     margin: 10px auto;
     background-color: #eeeeee;
     border: 1px solid #333;
-    width: 600px;
+    width: 400px;
     height:auto;
 }
     
@@ -178,4 +178,7 @@ h2 {
 .large {
     width:500px;
 }
-    
+
+.original {
+    width: 600px;
+}
