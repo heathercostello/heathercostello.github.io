@@ -1,0 +1,107 @@
+@media screen and (min-width: 650px) {
+
+    #navigation li {
+        float: left;
+      }
+      
+      #navigation li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 5px 15px;
+        text-decoration: none;
+        font-size: 13px;
+        height: 25px;
+        position: relative;
+        bottom: 15px;
+      }
+
+    .dropmenu { display: none;}
+
+    .menu { display: block;
+        background-color: rgb(61, 83, 97);
+        bottom: 15px;
+    }
+
+    .dropdown-content {
+        display: block;
+        background-color: rgb(61, 83, 97);
+    }
+
+      .particle article img {
+          float: right;
+          max-width: 300px;
+          position: relative;
+          top: 30px;
+          padding:20px
+      }
+
+      .particle {
+          text-align: left;
+      }
+
+      .contact img {
+          float: right;
+          max-width: 300px;
+          position: relative;
+        bottom: 155px;
+        clear: both;
+      }
+
+      .contact {
+          text-align: left;
+          
+      }
+
+    footer {
+        text-align: center;
+        margin: auto;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .fiveday {
+          display: inline;
+      }
+      table, th, td {
+        border: 1px solid black;
+        text-align: center;
+      }
+
+      table {
+          max-width: 600px;
+          padding: 5px;
+          align-content: center;
+      }
+
+      .fiveday h4 {
+          text-align: center;
+          line-height: 2px;
+      }
+
+      .fiveday {
+          align-content: center;
+      }
+
+      th { 
+          background-color: rgba(104, 21, 0, 0.76);
+      }
+
+      header h2 {
+          position: relative;
+          right: 38px;
+      }
+      
+      #navigation .active {
+        background-color: burlywood;
+      }
+
+      .tbl {
+          margin: auto;
+      }
+
+      picture .heroimg {
+        margin: auto;
+
+      }
+    }
