@@ -71,7 +71,7 @@
       }
 
       table {
-          max-width: 600px;
+          max-width: 1000px;
           padding: 5px;
           align-content: center;
       }
@@ -104,11 +104,11 @@
 
       picture .heroimg {
         margin: auto;
-        width: 100%;
+        width: 768px;
       }
 
       .heroimg img {
-        width: 100%;
+        width: 768px;
       }
 
       .gallery {
@@ -121,11 +121,11 @@
       }
 
       .gallery img {
-        width: 400px;
-        height: 200px;
+        width: 100px;
+        height: auto;
     }
     
       .gallery img:hover {
-        box-shadow: 10px 10px 5px grey;
+        box-shadow: 0 0 50px #333;
       }
     }
