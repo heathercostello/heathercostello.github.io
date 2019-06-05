@@ -4,89 +4,82 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Gallary Page</title>
+    <title>Preston Page</title>
     <meta name="description" content="Preston">
     <link href="https://fonts.googleapis.com/css?family=Montserrat,Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small-7.css">
-    <link rel="stylesheet" href="css/meduim-7.css">
+    <link rel="stylesheet" href="css/medium-7.css">
     <link rel="stylesheet" href="css/large-7.css">
 </head>
 
 <body>
-    <section>
-        <header>
+    <div id="content">
+        <header class="head">
             <img src="images/Weather-icon.png" alt="logo">
-            <h2>Weather For You</h2>
-            <div class="motto">Weather forecasts that you can trust</div>
-
-            <div class="menu">
-                <button class="dropmenu">&#9776;</button>
-                <div class="dropdown-content">
-                    <nav>
-                        <ul id="navigation" class="hide" style="list-style-type:none;">
-                            <li><a href="#">Home</a></li>
-                            <li><a class="active"
-                                    href="https://heathercostello.github.io/assignments/lesson-7/preston-7.html">Preston</a>
-                            </li>
-                            <li><a href="#">Soda Springs</a></li>
-                            <li><a href="#">Fish Haven</a></li>
-                            <li><a href="#">Storm Center</a></li>
-                            <li><a class="active"
-                                    href="https://heathercostello.github.io/assignments/lesson-7/gallery-7.html">Gallery</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-
+            <div>
+                <h2>Weather For You</h2>
+                <div class="motto">Weather forecasts that you can trust</div>
             </div>
         </header>
-    </section>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a class="active" href="preston-7.html">Preston</a>
+                </li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Weather Gallery</h1>
+        <main>
+            <div class="gallery">
+                <figure class="fig">
+                    <img src="images/dock.jpg" alt="dock">
+                    <figcaption class="desc">Add a description of the image here</figcaption>
+                </figure>
 
-    <h1>Weather Gallery</h1>
-    <main>
-    <div class="gallery">
-        <figure>
-            <img src="images/dock.jpg" alt="dock">
-            <figcaption class="desc">Add a description of the image here</figcaption>
-        </figure>
+                <figure class="fig">
+                    <img src="images/lake.jpg" alt="lake">
+                    <figcaption class="desc">Add a description of the image here</figcaption>
+                </figure>
 
-        <figure>
-            <img src="images/lake.jpg" alt="lake">
-            <figcaption class="desc">Add a description of the image here</figcaption>
-        </figure>
+                <figure class="fig">
+                    <img src="images/horse.jpg" alt="horse">
+                    <figcaption class="desc">Add a description of the image here</figcaption>
+                </figure>
 
-        <figure>
-            <img src="images/horse.jpg" alt="horse">
-            <figcaption class="desc">Add a description of the image here</figcaption>
-        </figure>
+                <figure class="fig">
+                    <img src="images/road.jpg" alt="road">
+                    <figcaption class="desc">Add a description of the image here</figcaption>
+                </figure>
 
-        <figure>
-            <img src="images/road.jpg" alt="road">
-            <figcaption class="desc">Add a description of the image here</figcaption>
-        </figure>
+                <figure class="fig">
+                    <img src="images/sunset.jpg" alt="sunset">
+                    <figcaption class="desc">Add a description of the image here</figcaption>
+                </figure>
 
-        <figure>
-            <img src="images/sunset.jpg" alt="sunset">
-            <figcaption class="desc">Add a description of the image here</figcaption>
-        </figure>
-
-        <figure>
-            <img src="images/house.jpg" alt="house">
-            <figcaption class="desc">Add a description of the image here</figcaption>
-        </figure>
+                <figure class="fig">
+                    <img src="images/house.jpg" alt="house">
+                    <figcaption class="desc">Add a description of the image here</figcaption>
+                </figure>
+            </div>
+        </main>
+        <footer>
+            <p class="foot">&copy;|
+                <span id="showDate"></span> | weather4you | Heather Costello
+            </p>
+        </footer>
+        <script src="scripts/currentdate.js">
+        </script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/windchill.js">
+        </script>
     </div>
-</main>
-    <footer>
-        <p class="foot">&copy;|
-            <span id="showDate"></span> |
-            weather4you |
-            Heather Costello
-        </p>
-    </footer>
-    <script src="scripts/currentdate.js"> </script>
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"> </script>
 </body>
 
 </html>
