@@ -71,7 +71,7 @@ nav ul {
 
 .head h2 {
     display: flex;
-    align-content: flex-start;
+    align-content: center;
 }
 
 header,
@@ -214,7 +214,7 @@ footer .foot {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: .1px;
-    max-width: 800px;
+    width: 100%;
     vertical-align: middle;
 }
 

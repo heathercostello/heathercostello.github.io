@@ -68,9 +68,10 @@
     }
     .header {
         display: flex;
+        align-content: center;
     }
     .gallery img {
-        width: 100px;
+        width: 100%;
         justify-items: center;
     }
     .fig:hover {
