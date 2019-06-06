@@ -189,7 +189,7 @@ h2 {
     bottom: 20px;
 }
 
-.active {
+.navigation .active {
     background-color: burlywood;
 }
 
