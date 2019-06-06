@@ -24,11 +24,7 @@
     .navigation li a {
         color: white;
     }
-}
-
-.head .title {
-    align-items: center;
-}
-
-
+    .head .title {
+        align-items: center;
+    }
 }
