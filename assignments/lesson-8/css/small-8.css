@@ -1,0 +1,232 @@
+body {
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#content {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #506f82;
+}
+
+h1 {
+    font-size: 1.2rem;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: #3b5464;
+}
+
+nav ul {
+    padding: 0;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: #fff;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: white;
+    background-color: #273842;
+    font-weight: 700;
+}
+
+.responsive li {
+    display: block;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    order: 2;
+}
+
+.head h2 {
+    display: flex;
+    align-content: center;
+}
+
+header,
+main,
+footer,
+article {
+    margin: auto;
+    padding: 1rem;
+}
+
+header,
+footer,
+footer a {
+    text-align: center;
+    color: whitesmoke;
+}
+
+header {
+    background-color: rgb(104, 21, 0, 0.925);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+main {
+    background-color: #506F82;
+    color: whitesmoke;
+    text-align: center;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    float: left;
+}
+
+footer {
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(104, 21, 0, 0.925);
+    margin: auto;
+}
+
+footer p,
+footer div {
+    text-align: center;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 3px 3px 5px #777;
+}
+
+.town {
+    margin: 10px auto;
+    position: relative;
+}
+
+.town img {
+    width: 100%;
+    height: 180px;
+}
+
+.weatherstats {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    background: radial-gradient(rgb(104, 21, 0, 0.925), #777);
+    border: 1px solid white;
+    padding: 1rem;
+    box-shadow: 0 0 30px #fff;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.particle {
+    text-align: left;
+    background-color: rgba(179, 97, 77, 0.925);
+    margin: auto;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.contact {
+    text-align: center;
+    background-color: #506F82;
+    margin: auto;
+    line-height: 1;
+    padding: 1em;
+    color: white;
+}
+
+.contact img {
+    max-width: 600px;
+}
+
+.particle article img {
+    max-width: 600px;
+}
+
+.fiveday {
+    display: none;
+}
+
+.motto {
+    padding: 10px;
+    bottom: 20px;
+}
+
+.navigation .active {
+    background-color: burlywood;
+}
+
+#showDate {
+    display: inline-block;
+}
+
+.large {
+    width: 500px;
+}
+
+.original {
+    width: 600px;
+}
+
+footer .foot {
+    margin: auto;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .1px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+}
+
+.heroimg .medium {
+    display: none;
+}
+
+.heroimg .large {
+    display: none;
+}

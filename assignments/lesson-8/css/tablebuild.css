@@ -50,10 +50,11 @@ th {
     font-size: 18px;
 }
 
-table tbody tr td:nth-child(7) {
-    background-color: #628ca6;
-}
-
 tfoot {
     font-size: 10px;
+}
+
+table tbody tr:nth-child(5) td:nth-child(3) {
+    background-color: #628ca6;
+    color: white;
 }
