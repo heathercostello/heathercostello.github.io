@@ -27,7 +27,6 @@ nav {
     align-items: flex-start;
     order: 2;
     margin: 0 auto;
-    max-width: 760px;
     background-color: #3b5464;
 }
 
@@ -71,7 +70,6 @@ nav ul {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: flex-start;
     order: 2;
 }
