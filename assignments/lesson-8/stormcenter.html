@@ -36,6 +36,55 @@
             </ul>
         </nav>
 
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">Full Name*<input type="text" name="fullname" placeholder="John Done" pattern=".{6,}"
+                        required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="demo@gmail.com"></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Zip Code*<input type="number" name="zip" placeholder="12345" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date<input type="date" name="sdate" placeholder="mm/dd/yyyy"></label>
+                <label class="top">Storm Type
+                    <input list="types" name="stype"><datalist id="types">
+                        <option value="">Select Storm Type &#9662;
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                   </label>
+                <br>
+                <label class="top">Storm Severity<input type="range" name="severity" id="rating" value="" min="1" max="10"
+                        step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span></label>
+                <br>
+                <label class="top">Storm Region<select name="stormregion">
+                        <option value="">Select Region... &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="sugarcity">Sugar City</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select></label>
+                <br>
+                <div>User In-Danger Level</div>
+                <label class="sbs"><input type="radio" name="dangerlevel" value="yes">Yes</label>
+                <label class="sbs"><input type="radio" name="dangerlevel" value="maybe">Maybe</label>
+                <label class="sbs"><input type="radio" name="dangerlevel" value="no">No</label>
+                <br>
+                <textarea rows="4" cols="50">
+                    Additional information or comments
+                    </textarea>
+            </fieldset>
+            <input class="submitBtn" type="submit" value="Submit My Form">
+        </form>
+
+
+
+
 
         <footer>
             <p class="foot"><a href="http://www.byui.edu/" target="_blank">BYUI &copy;</a> |
@@ -44,7 +93,8 @@
         </footer>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/hamburger.js"></script>
+        <script src="scripts/rating.js"></script>
     </div>
 </body>
 
-</html>
+</html>div

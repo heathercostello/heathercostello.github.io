@@ -86,4 +86,7 @@
     .heroimg .small {
         display: none;
     }
+    form label.sbs {
+        padding: 7px 0;
+    }
 }
