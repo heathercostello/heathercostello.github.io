@@ -298,11 +298,11 @@ form label.sbs {
 }
 
 form label.top input:required {
-    border-left: rgba(179, 97, 77, 0.925) solid 5px;
+    border-bottom: rgba(179, 97, 77, 0.925) solid 5px;
 }
 
 form label.top input:required:valid {
-    border-left: darkolivegreen solid 5px;
+    border-bottom: darkolivegreen solid 9px;
 }
 
 textarea {
