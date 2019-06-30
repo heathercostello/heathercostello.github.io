@@ -341,12 +341,11 @@ textarea {
     margin-top: 0;
 }
 
-.towns h1 {
+.towns h2 {
     text-align: center;
     margin-top: 1.5em;
     color: #e4efff;
     margin: auto;
-    font-style: strong;
 }
 
 .towns p:first-of-type {
@@ -365,7 +364,7 @@ textarea {
     width: auto;
 }
 
-.heroimg {
+picture .heroimg {
     width: 100%;
     height: 180px;
 }

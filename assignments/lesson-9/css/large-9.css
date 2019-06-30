@@ -89,14 +89,6 @@
     form label.sbs {
         padding: 7px 0;
     }
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: .1px;
-        width: 100%;
-        background-color: rgb(104, 21, 0, 0.925);
-        padding: 10px;
-    }
     .towns {
         margin-bottom: 5em;
     }
