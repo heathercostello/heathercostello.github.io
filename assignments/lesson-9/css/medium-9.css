@@ -27,4 +27,8 @@
     .head .title {
         align-items: center;
     }
+    .towns {
+        display: flex;
+        flex-flow: row wrap;
+    }
 }

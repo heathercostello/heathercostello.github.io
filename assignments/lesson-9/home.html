@@ -36,29 +36,45 @@
             </ul>
         </nav>
         <main>
-            <div class="grid-container">
-                <div class="grid-item">
+            <h2>Welcome to Weather for You!</h2>
+            <picture class="heroimg">
+                <source class="small" srcset="images/field-compressor.jpg" media=" (max-width: 599px) ">
+                <source class="medium" srcset="images/field-compressor.jpg" media=" (min-width: 600px) ">
+                <source class="large" srcset="images/field-compressor.jpg" media=" (min-width: 768px) ">
+                <img src="images/field-compressor.jpg" alt="field img">
+            </picture>
+
+            <section class="towns">
+                <article class="towns">
                     <h1>Preston</h1>
-                    <p>Where you will grow!<br> year founded<br> population
-                        <br> annual rainfall<br>
-                    </p>
-                    <img class="p" src="images/preston.jpeg" alt="Preston">
-                </div>
-                <div class="grid-item">
+                    <p>Where you will grow!</p>
+                    <p>Year Founded: 1866</p>
+                    <p>Population: 5204</p>
+                    <p>Annual Rainfall: 16.65</p>
+                    <img src="images/preston.jpeg" alt="Preston">
+                </article>
+
+                <article class="towns">
                     <h1>Soda Springs</h1>
-                    <p>Green is our way of life.<br> year founded<br> population
-                        <br> annual rainfall<br>
-                    </p>
-                    <img class="p" src="images/sodasprings.jpg" alt="Preston">
-                </div>
-                <div class="grid-item">
+                    <p>Green is our way of life.</p>
+                    <p>Year Founded: 1858</p>
+                    <p>Population: 2985</p>
+                    <p>Annual Rainfall: 15.75</p>
+                    <img src="images/sodasprings.jpg" alt="Preston">
+                </article>
+
+                <article class="towns">
                     <h1>Fish Haven</h1>
-                    <p>Where everyone is lifted.<br> year founded<br> population
-                        <br> annual rainfall<br>
+                    <p>Where everyone is lifted.</p>
+                    <p>Year Founded: 1864</p>
+                    <p>Population: 501</p>
+                    <p>Annual Rainfall: 14.2</p>
                     </p>
-                    <img class="p" src="images/fishhaven.jpg" alt="Preston">
-                </div>
-            </div>
+                    <img src="images/fishhaven.jpg" alt="Preston">
+                </article>
+
+            </section>
+
         </main>
     </div>
     <section class="contact">
@@ -75,6 +91,7 @@
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/townjson.js"></script>
     </div>
 </body>
 

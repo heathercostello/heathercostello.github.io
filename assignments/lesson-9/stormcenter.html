@@ -25,8 +25,8 @@
         <nav>
             <ul class="navigation">
                 <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="preston-9.html">Preston</a>
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-8.html">Preston</a>
                 </li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
@@ -47,7 +47,7 @@
             </fieldset>
             <fieldset>
                 <legend>Storm Information</legend>
-                <label class="top">Storm Date<input type="date" name="sdate" placeholder="mm/dd/yyyy"></label>
+                <label class="top">Storm Date<input type="number" name="sdate" placeholder="mm/dd/yyyy"></label>
                 <label class="top">Storm Type
                     <input list="types" name="stype"><datalist id="types">
                         <option value="">Select Storm Type &#9662;
@@ -59,9 +59,9 @@
                     </datalist>
                    </label>
                 <br>
-                <label class="top">Storm Severity<input type="range" name="severity" id="rating" value="" min="1" max="10"
-                        step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span></label>
+                <label class="top">Storm Severity<input type="range" name="severity" id="rating" value="10" min="1" max="10"
+                     step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span></label>
                 <br>
                 <label class="top">Storm Region<select name="stormregion">
                         <option value="">Select Region... &#9662;</option>
@@ -83,7 +83,13 @@
         </form>
 
 
-
+        <section class="contact">
+            <h4>Weather For You</h4>
+            <p>30 N. 1st E.<br> Preston, ID 83263</p>
+            <p>999.999.9999<br> weatherforyou@mail.com
+            </p>
+            <a href="https://www.google.com/maps/place/Preston,+ID+83263/data=!4m2!3m1!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f?sa=X&ved=2ahUKEwj06uH68bLiAhXF6Z4KHVTaAnUQ8gEwAHoECAsQAQ" target="_blank"><img src="images/map.jpg" alt="Map Image"></a>
+        </section>
 
 
         <footer>
@@ -97,4 +103,4 @@
     </div>
 </body>
 
-</html>div
+</html>

@@ -97,4 +97,7 @@
         background-color: rgb(104, 21, 0, 0.925);
         padding: 10px;
     }
+    .towns {
+        margin-bottom: 5em;
+    }
 }
