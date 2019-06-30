@@ -327,13 +327,13 @@ textarea {
     border-radius: 5px;
     padding: 15px;
     max-width: 18em;
-    margin-bottom: 1em;
-    box-shadow: 5px 5px 10px rgba(179, 97, 77, 0.925);
+    margin-bottom: .2em;
+    box-shadow: 5px 5px 10px rgba(56, 15, 5, 0.925);
     background-color: rgb(104, 21, 0, 0.925);
 }
 
 .towns p {
-    margin: .3em 5.5em;
+    margin: .3em 4.5em;
     text-align: left;
 }
 
@@ -344,8 +344,14 @@ textarea {
 .towns h2 {
     text-align: center;
     margin-top: 1.5em;
-    color: #e4efff;
+    color: whitesmoke;
     margin: auto;
+}
+
+.towns img {
+    margin: 1.5em auto 0 auto;
+    height: 200px;
+    width: auto;
 }
 
 .towns p:first-of-type {
@@ -356,12 +362,6 @@ textarea {
     font-style: italic;
     text-transform: none;
     margin-top: 1rem;
-}
-
-.towns img {
-    margin: 1.5em auto 0 auto;
-    height: 200px;
-    width: auto;
 }
 
 picture .heroimg {

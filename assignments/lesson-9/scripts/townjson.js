@@ -75,7 +75,5 @@ function showTown(jsonObj) {
         myArticle.appendChild(myImage);
         myArticle.className = "towns";
 
-        section.appendChild(myArticle);
-
     }
 }
