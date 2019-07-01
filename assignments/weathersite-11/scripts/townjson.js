@@ -1,79 +1,64 @@
-var townindex, townname;
-var section = document.querySelector("section.townsection");
-
+var article = document.querySelector('article');
 var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 var request = new XMLHttpRequest();
-request.open("GET", requestURL);
-request.responseType = "json";
+request.open('GET', requestURL);
+request.responseType = 'json';
 request.send();
-
 request.onload = function() {
-    var towndata = request.response;
-    showTown(towndata);
+    var townData = request.response;
+    showData(townData);
 }
 
-function showTown(jsonObj) {
-    townname = jsonObj["towns"];
-
-    for (townindex = 0; townindex < townname.length; townindex++) {
-
-        if (townname[townindex].name == 'Preston')
-            populateTownInfo(townname[townindex]);
-    }
-    for (townindex = 0; townindex < townname.length; townindex++) {
-
-        if (townname[townindex].name == 'Soda Springs')
-            populateTownInfo(townname[townindex]);
-    }
-    for (townindex = 0; townindex < townname.length; townindex++) {
-
-        if (townname[townindex].name == 'Fish Haven')
-            populateTownInfo(townname[townindex]);
-    }
+function showData(jsonObj) {
+    var data = jsonObj['towns'];
 
 
-    function populateTownInfo(jsonObj) {
-        var town = jsonObj;
-
-
-
-        var myArticle = document.createElement("article");
-        var myH2 = document.createElement("h2");
-        var myPara1 = document.createElement("p");
-        var myPara2 = document.createElement("p");
-        var myPara3 = document.createElement("p");
-        var myPara4 = document.createElement("p");
-
-        var myImage = document.createElement("img");
-
-        myH2.textContent = town.name;
-        myPara1.textContent = town.motto;
-        myPara2.textContent = "Year Founded: " + town.yearFounded;
-        myPara3.textContent = "Population: " + town.currentPopulation;
-        myPara4.textContent = "Annual Rainfall: " + town.averageRainfall;
-
-        switch (myH2.textContent) {
-            case "Preston":
-                myImage.src = "images/preston.jpeg";
-                break;
-
-            case "Soda Springs":
-                myImage.src = "images/sodasprings.jpg";
-                break;
-
-            case "Fish Haven":
-                myImage.src = "images/fishhaven.jpg";
-                break;
+    for (var i = 0; i < data.length; i++) {
+        if ((data[i].name == "Preston" || data[i].name == "Soda Springs" || data[i].name == "Fish Haven") == false) {
+            continue;
         }
+        var myArticle = document.createElement('div');
+        var myH2 = document.createElement('h2');
+        var myPara1 = document.createElement('h6');
+        var myPara2 = document.createElement('p');
+        var myPara3 = document.createElement('p');
+        var myPara4 = document.createElement('p');
+        var myPhoto = document.createElement('img');
+
+        myH2.textContent = data[i].name;
+        myPara1.textContent = data[i].motto;
+        myPara2.textContent = 'Year Founded: ' + data[i].yearFounded;
+        myPara3.textContent = 'Current Population: ' + data[i].currentPopulation;
+        myPara4.textContent = 'Average Rain Fall: ' + data[i].averageRainfall;
 
         myArticle.appendChild(myH2);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myPara4);
+        myArticle.appendChild(myPhoto);
 
-        myArticle.appendChild(myImage);
-        myArticle.className = "towns";
+        if (data[i].name == "Preston") {
+            myPhoto.src = "images/preston.jpeg"
+            myPhoto.setAttribute('class', 'homePhoto');
+            myPhoto.setAttribute('alt', 'Preston Photo');
+            myArticle.style.order = "1";
+        }
+        if (data[i].name == "Soda Springs") {
+            myPhoto.src = "images/sodasprings.jpg"
+            myPhoto.setAttribute('class', 'homePhoto');
+            myPhoto.setAttribute('alt', 'Soda Springs Photo');
+            myArticle.style.order = "2";
+        }
+        if (data[i].name == "Fish Haven") {
+            myPhoto.src = "images/fishhaven.jpg"
+            myPhoto.setAttribute('class', 'homePhoto');
+            myPhoto.setAttribute('alt', 'Fish Haven Photo');
+            myArticle.style.order = "3";
+        }
+        article.appendChild(myArticle);
+
 
     }
+
 }
