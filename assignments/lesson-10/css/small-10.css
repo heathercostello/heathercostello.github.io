@@ -188,6 +188,7 @@ h2 {
 
 .fiveday {
     display: none;
+    width: 90%;
 }
 
 .motto {
@@ -359,4 +360,17 @@ textarea {
     border-radius: 5px;
     margin: 20px;
     width: 80%;
+}
+
+.jevents {
+    margin: auto;
+    text-align: center;
+    list-style: none;
+    background-color: #3b5464;
+    border: 5px;
+    color: whitesmoke;
+}
+
+.jevents ul li {
+    list-style-type: none;
 }
