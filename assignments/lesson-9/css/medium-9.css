@@ -31,4 +31,12 @@
         display: flex;
         flex-flow: row wrap;
     }
+    .jarticle {
+        justify-content: center;
+        border-collapse: collapse;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        text-align: center;
+    }
 }

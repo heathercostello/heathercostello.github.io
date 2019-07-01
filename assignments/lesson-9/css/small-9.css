@@ -323,48 +323,40 @@ textarea {
 
 /* JSON */
 
-.towns article {
-    border-radius: 5px;
-    padding: 15px;
-    max-width: 18em;
-    margin-bottom: .2em;
-    box-shadow: 5px 5px 10px rgba(56, 15, 5, 0.925);
-    background-color: rgb(104, 21, 0, 0.925);
-}
-
-.towns p {
-    margin: .3em 4.5em;
-    text-align: left;
-}
-
-.towns ul {
-    margin-top: 0;
-}
-
-.towns h2 {
+.jarticle {
+    justify-content: center;
+    border-collapse: collapse;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
     text-align: center;
-    margin-top: 1.5em;
-    color: whitesmoke;
-    margin: auto;
 }
 
-.towns img {
-    margin: 1.5em auto 0 auto;
-    height: 200px;
-    width: auto;
+.jarticle div {
+    border: 4px solid #3b5464;
+    border-radius: 10px;
+    margin: 0px;
+    background-color: rgba(179, 97, 77, 0.925);
+    color: whitesmoke;
+    max-width: 330px;
 }
 
-.towns p:first-of-type {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    color: whitesmoke;
+.jarticle H5 {
+    border: 4px solid #3b5464;
+    border-radius: 15px;
+}
+
+.jarticle H6 {
     font-style: italic;
-    text-transform: none;
-    margin-top: 1rem;
 }
 
-picture .heroimg {
-    width: 100%;
-    height: 180px;
+.jarticle p {
+    margin: 0px;
+}
+
+.homePhoto {
+    border: 4px dotted;
+    border-radius: 5px;
+    margin: 20px;
+    width: 80%;
 }
