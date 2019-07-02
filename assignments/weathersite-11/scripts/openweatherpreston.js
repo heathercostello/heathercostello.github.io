@@ -11,6 +11,7 @@ weatherObject.onload = function() {
     document.getElementById('temp').innerHTML = weatherInfo.main.temp;
     document.getElementById('humidity').innerHTML = weatherInfo.main.humidity;
     document.getElementById('windspeed').innerHTML = weatherInfo.wind.speed;
+    document.getElementById('winddirection').innerHTML = Math.round(weatherInfo.wind.deg);
 
     calculatewc();
 }

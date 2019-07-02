@@ -1,3 +1,12 @@
+// Map
+function myMap() {
+    var mapProp = {
+        center: new google.maps.LatLng(42.6544, -111.6047),
+        zoom: 12,
+    };
+    var map = new google.maps.Map(document.getElementById("googlemap"), mapProp);
+}
+
 //current weather
 var weatherObject = new XMLHttpRequest();
 weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5607916&appid=d34d9f6fc8c50907471e335b2a10c60b&units=imperial', true);
@@ -11,6 +20,7 @@ weatherObject.onload = function() {
     document.getElementById('temp').innerHTML = weatherInfo.main.temp;
     document.getElementById('humidity').innerHTML = weatherInfo.main.humidity;
     document.getElementById('windspeed').innerHTML = weatherInfo.wind.speed;
+    document.getElementById('winddirection').innerHTML = Math.round(weatherInfo.wind.deg);
 
     calculatewc();
 }

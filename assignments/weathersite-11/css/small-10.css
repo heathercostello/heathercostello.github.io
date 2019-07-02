@@ -145,7 +145,7 @@ h2 {
 
 .town img {
     width: 100%;
-    height: 180px;
+    height: 200px;
 }
 
 .weatherstats {
@@ -175,7 +175,8 @@ h2 {
     line-height: 1;
     padding: 1em;
     color: white;
-    border: 4px solid rgba(179, 97, 77, 0.925);
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact img {
@@ -380,4 +381,9 @@ textarea {
 .articlepic {
     height: 200px;
     width: auto;
+}
+
+.map {
+    position: relative;
+    overflow: hidden;
 }
