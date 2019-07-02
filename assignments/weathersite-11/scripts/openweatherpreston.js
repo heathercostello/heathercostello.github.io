@@ -49,19 +49,19 @@ weatherForecast.onload = function() {
         continue;
     }
 
-    //Date
+    //forcast date
     document.getElementById('day1').innerHTML = listDate[0];
     document.getElementById('day2').innerHTML = listDate[1];
     document.getElementById('day3').innerHTML = listDate[2];
     document.getElementById('day4').innerHTML = listDate[3];
     document.getElementById('day5').innerHTML = listDate[4];
-    //Picture
+    //Icon
     document.getElementById('weather_icon1').src = listIconCode[0];
     document.getElementById('weather_icon2').src = listIconCode[1];
     document.getElementById('weather_icon3').src = listIconCode[2];
     document.getElementById('weather_icon4').src = listIconCode[3];
     document.getElementById('weather_icon5').src = listIconCode[4];
-    //Tempurature
+    //Temp
     document.getElementById('highTemp1').innerHTML = listTemp[0];
     document.getElementById('highTemp2').innerHTML = listTemp[1];
     document.getElementById('highTemp3').innerHTML = listTemp[2];
@@ -108,9 +108,6 @@ function showData(jsonObj) {
         myAside.appendChild(myH2);
         myAside.appendChild(mylist);
         myAside.appendChild(myPhoto);
-
-
-
 
         aside.appendChild(myAside);
     }

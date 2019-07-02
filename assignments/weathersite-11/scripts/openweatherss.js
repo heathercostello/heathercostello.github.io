@@ -1,6 +1,6 @@
 //current weather
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5604473&appid=d34d9f6fc8c50907471e335b2a10c60b&units=imperial', true);
+weatherObject.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/weather?id=5607916&appid=d34d9f6fc8c50907471e335b2a10c60b&units=imperial', true);
 weatherObject.send();
 weatherObject.onload = function() {
 
@@ -17,7 +17,7 @@ weatherObject.onload = function() {
 
 //forcast
 var weatherForecast = new XMLHttpRequest
-weatherForecast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=d34d9f6fc8c50907471e335b2a10c60b&units=imperial', true);
+weatherForecast.open('GET', 'HTTPS://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=d34d9f6fc8c50907471e335b2a10c60b&units=imperial', true);
 weatherForecast.send();
 weatherForecast.onload = function() {
 
@@ -49,19 +49,19 @@ weatherForecast.onload = function() {
         continue;
     }
 
-    //forcast date
+    //Date
     document.getElementById('day1').innerHTML = listDate[0];
     document.getElementById('day2').innerHTML = listDate[1];
     document.getElementById('day3').innerHTML = listDate[2];
     document.getElementById('day4').innerHTML = listDate[3];
     document.getElementById('day5').innerHTML = listDate[4];
-    //Icon
+    //Picture
     document.getElementById('weather_icon1').src = listIconCode[0];
     document.getElementById('weather_icon2').src = listIconCode[1];
     document.getElementById('weather_icon3').src = listIconCode[2];
     document.getElementById('weather_icon4').src = listIconCode[3];
     document.getElementById('weather_icon5').src = listIconCode[4];
-    //Temp
+    //Tempurature
     document.getElementById('highTemp1').innerHTML = listTemp[0];
     document.getElementById('highTemp2').innerHTML = listTemp[1];
     document.getElementById('highTemp3').innerHTML = listTemp[2];
@@ -108,9 +108,6 @@ function showData(jsonObj) {
         myAside.appendChild(myH2);
         myAside.appendChild(mylist);
         myAside.appendChild(myPhoto);
-
-
-
 
         aside.appendChild(myAside);
     }
