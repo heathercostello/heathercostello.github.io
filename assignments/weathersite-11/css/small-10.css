@@ -374,3 +374,8 @@ textarea {
 .jevents ul li {
     list-style-type: none;
 }
+
+.articlepic {
+    height: 200px;
+    width: auto;
+}
