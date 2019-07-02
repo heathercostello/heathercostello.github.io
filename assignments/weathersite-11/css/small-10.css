@@ -198,6 +198,8 @@ h2 {
 
 .navigation .active {
     background-color: burlywood;
+    color: rgba(22, 22, 49, 0.925);
+    margin: none;
 }
 
 #showDate {
