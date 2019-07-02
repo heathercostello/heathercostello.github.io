@@ -70,7 +70,7 @@ weatherForecast.onload = function() {
 
 }
 
-//Preston's Upcoming Events
+//Fish Haven's Upcoming Events
 var aside = document.querySelector('aside');
 var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 var request = new XMLHttpRequest();
@@ -87,7 +87,7 @@ function showData(jsonObj) {
 
 
     for (var i = 0; i < data.length; i++) {
-        if ((data[i].name == "Preston") == false) {
+        if ((data[i].name == "Fish Haven") == false) {
             continue;
         }
         var myAside = document.createElement('aside');
@@ -95,7 +95,7 @@ function showData(jsonObj) {
         var mylist = document.createElement('ul');
         var myPhoto = document.createElement('img');
 
-        myH2.textContent = "Upcoming events in Preston:";
+        myH2.textContent = "Upcoming events in Fish Haven:";
 
 
         var allevents = data[i].events;

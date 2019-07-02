@@ -87,7 +87,7 @@ function showData(jsonObj) {
 
 
     for (var i = 0; i < data.length; i++) {
-        if ((data[i].name == "Preston") == false) {
+        if ((data[i].name == "Soda Springs") == false) {
             continue;
         }
         var myAside = document.createElement('aside');
@@ -95,7 +95,7 @@ function showData(jsonObj) {
         var mylist = document.createElement('ul');
         var myPhoto = document.createElement('img');
 
-        myH2.textContent = "Upcoming events in Preston:";
+        myH2.textContent = "Upcoming events in Soda Springs:";
 
 
         var allevents = data[i].events;
