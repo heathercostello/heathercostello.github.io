@@ -103,7 +103,6 @@ function showData(jsonObj) {
         var myAside = document.createElement('aside');
         var myH2 = document.createElement('h2');
         var mylist = document.createElement('ul');
-        var myPhoto = document.createElement('img');
 
         myH2.textContent = "Upcoming events in Soda Springs:";
 
@@ -117,7 +116,6 @@ function showData(jsonObj) {
 
         myAside.appendChild(myH2);
         myAside.appendChild(mylist);
-        myAside.appendChild(myPhoto);
 
         aside.appendChild(myAside);
     }
