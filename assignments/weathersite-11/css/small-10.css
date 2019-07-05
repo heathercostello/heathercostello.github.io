@@ -378,6 +378,11 @@ textarea {
     list-style-type: none;
 }
 
+.jarticle h3 {
+    font-style: italic;
+    text-align: center;
+}
+
 .articlepic {
     height: 200px;
     width: auto;
