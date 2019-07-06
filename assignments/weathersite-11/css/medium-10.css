@@ -48,4 +48,8 @@
         padding: 10px;
         vertical-align: middle;
     }
+    .particle article img {
+        max-width: 400px;
+        margin: auto;
+    }
 }
