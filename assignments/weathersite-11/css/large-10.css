@@ -9,18 +9,11 @@
     .particle {
         text-align: left;
     }
-    .contact img {
-        float: right;
-        max-width: 300px;
-        position: relative;
-        bottom: 155px;
-        clear: both;
-    }
     .contact {
         text-align: left;
     }
     footer {
-        text-align: center;
+        text-align: left;
         margin: auto;
         margin-right: auto;
         margin-left: auto;
@@ -101,5 +94,8 @@
     }
     .jarticle div {
         margin: 5px;
+    }
+    .social {
+        max-width: 20px;
     }
 }

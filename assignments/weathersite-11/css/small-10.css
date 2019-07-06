@@ -169,10 +169,10 @@ h2 {
 }
 
 .contact {
-    text-align: center;
+    text-align: left;
     background-color: rgb(43, 58, 68);
     margin: auto;
-    line-height: 1;
+    line-height: 20px;
     padding: 1em;
     color: white;
     display: flex;
@@ -180,7 +180,7 @@ h2 {
 }
 
 .contact img {
-    max-width: 600px;
+    max-width: 30px;
 }
 
 .particle article img {
@@ -388,7 +388,34 @@ textarea {
     width: auto;
 }
 
-.map {
+
+/* 
+.mapp {
     position: relative;
     overflow: hidden;
+    height: 50%;
+} */
+
+.social {
+    max-width: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .2px;
+    width: 92%;
+    background-color: #202d35;
+    padding: 10px;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    border: 1px solid #3b5464;
+    padding: 10px;
+    /* font-size: 10px; */
+    text-align: center;
+    color: white;
 }
