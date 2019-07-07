@@ -201,7 +201,6 @@ h2 {
 .navigation .active {
     background-color: burlywood;
     color: rgba(22, 22, 49, 0.925);
-    margin: none;
 }
 
 #showDate {
@@ -389,14 +388,6 @@ textarea {
     width: auto;
 }
 
-
-/* 
-.mapp {
-    position: relative;
-    overflow: hidden;
-    height: 50%;
-} */
-
 .social {
     max-width: 30px;
 }
@@ -413,10 +404,8 @@ textarea {
 }
 
 .grid-item {
-    /* background-color: rgba(255, 255, 255, 0.8); */
     border: 1px solid #3b5464;
     padding: 10px;
-    /* font-size: 10px; */
     text-align: center;
     color: white;
 }
