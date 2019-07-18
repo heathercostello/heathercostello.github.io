@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Temple Inn & Suites Home Page</title>
+    <meta name="keywords" content="Temple, Temples, Temple Services">
+    <meta name="description" content="Home Page">
+    <meta name="author" content="Heather Costello">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/temple-logo.jpg" alt="logo">
+        <h1 class="name">Temple Inn & Suites</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="temple-reservation.html">Temple Reservations</a>
+                </li>
+                <li><a href="services.html">Services</a></li>
+                <!-- <button class="service-button">Services</button>
+                <div class="service-dropdown">
+                    <a href="services.html">Services</a>
+                    <a href="reception.html">Reception</a>
+                    <a href="full-time-missionaries.html">Full Time Missionaries</a>
+                </div> -->
+                <li><a href="contact.html">Contact</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="images/temple-slc.jpg" style="width:100%" alt="Salt Lake temple">
+        <img class="mySlides" src="images/temple-columbia.jpg" style="width:100%" alt="columbia temple">
+        <img class="mySlides" src="images/temple-switz.jpg" style="width:100%" alt="switzerland temple">
+        <img class="mySlides" src="images/temple-cedar.jpg" style="width:100%" alt="cedar temple">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <h2>
+        Make a reservation with Temple Inn & Suites TODAY!
+    </h2>
+
+    <div class="choice-temple">
+        <p>The Concepción Chile Temple is a temple of The Church of Jesus Christ of Latter-day Saints in Concepción, Chile. The intent to construct the temple was announced by church president Thomas S. Monson on October 3, 2009, during the church's semi-annual
+            general conference. The temple was announced concurrently with the Brigham City Utah, Fort Lauderdale Florida, Fortaleza Brazil and Sapporo Japan temples; at the time, the announcement brought the total number of temples worldwide to 151.
+            It is the second temple constructed in Chile, along with the Santiago Chile Temple which was dedicated in 1983.
+            <br>On October 17, 2015, Walter F. González presided at a groundbreaking to signify beginning of construction. Following construction, a public open house was held from September 15 through October 13, 2018, excluding Sundays. The temple was
+            dedicated on October 28, 2018 by Russell M. Nelson.</p>
+        <img class="concepcion" src="images/temple-cocepcion.jpg" alt="Concepcion Temple">
+    </div>
+    <footer>
+        <p class="foot"><a href="resources.html" target="_blank">Resources</a> |
+            <span id="showDate"></span> | Temple Inn & Suites | &copy; 2019 <br>
+        </p>
+    </footer>
+
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+
+</html>
