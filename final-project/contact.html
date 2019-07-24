@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Temple Inn & Suites Contact Page</title>
+    <meta name="keywords" content="Temple, Temples, Temple Services">
+    <meta name="description" content="Contact Page">
+    <meta name="author" content="Heather Costello">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/temple-logo-new.jpg" alt="logo">
+        <h1 class="name">Temple Inn & Suites</h1>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="temples.html">Temples</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services 
+                <i class="fa fa-caret-down"></i>
+              </button>
+                <div class="dropdown-content">
+                    <a href="services.html">Services</a>
+                    <a href="reception.html">Reception</a>
+                    <a href="full-time-missionaries.html">Full-time Temple Missionaries</a>
+                </div>
+            </div>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </header>
+    <h2 class="contact">Contact Us</h2>
+
+    <!-- MAP -->
+
+    <div class="grid-container">
+
+        <div class="grid-item">
+            <p>Our company's headquarter address is: <br>4800 Montgomery Ln #300, <br>Bethesda, MD 20814</p><br>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050197013253!2d-77.09772048492718!3d38.98325177955749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1563590155180!5m2!1sen!2sus"
+                frameborder="0" style="border:0" allowfullscreen></iframe> </div>
+
+
+        <!-- CONTACT FORM -->
+
+        <div class="grid-item">
+            <h3>We are here to assist you.</h3>
+            <form class="form" method="get" action="thankyou.html">
+                First name:<br>
+                <input type="text" name="firstname" placeholder="John" required>
+                <br> Last name:<br>
+                <input type="text" name="lastname" placeholder="Doe">
+                <br> E-mail:<br>
+                <input type="email" name="email" placeholder="johndoe@email.com">
+                <br> Telephone: <br><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                <br> Your Message:<br>
+                <input type="text" name="comments" placeholder="Please type here...">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p class="foot"><a href="resources.html" target="_blank">Resources</a> |
+            <span id="showDate"></span> | Temple Inn & Suites | &copy; 2019 <br>
+        </p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+
+</html>

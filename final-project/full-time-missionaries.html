@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Temple Inn & Suites Missionary Page</title>
+    <meta name="keywords" content="Temple, Temples, Temple Services">
+    <meta name="description" content="Missionary Page">
+    <meta name="author" content="Heather Costello">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/temple-logo-new.jpg" alt="logo">
+        <h1 class="name">Temple Inn & Suites</h1>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="temples.html">Temples</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="services.html">Services</a>
+                    <a href="reception.html">Reception</a>
+                    <a href="full-time-missionaries.html" class="active">Full-time Temple Missionaries</a>
+                </div>
+            </div>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </header>
+    <!-- ROOM OPTIONS -->
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>Suites Offered</h2>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="images/hotels/modern1.jpg" alt="modern1" style="width:100%">
+                    <div class="text1">Modern Room</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="images/hotels/modern2.jpg" alt="modern2" style="width:100%">
+                    <div class="text1">Modern Room</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="images/hotels/modern3.jpg" alt="modern3" style="width:100%">
+                    <div class="text1">Modern Room</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="images/hotels/modern4.jpg" alt="modern4" style="width:100%">
+                    <div class="text1">Modern Bathroom</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="images/hotels/cottage1.jpg" alt="cottage1" style="width:100%">
+                    <div class="text1">Cottage Room</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="images/hotels/cottage2.jpg" alt="cottage2" style="width:100%">
+                    <div class="text1">Cottage Bathroom</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="images/hotels/classic1.jpg" alt="classic1" style="width:100%">
+                    <div class="text1">Classic Room</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="images/hotels/classic2.jpg" alt="classic2" style="width:100%">
+                    <div class="text1">Classic Bathroom</div>
+                </div>
+
+
+
+                <a class="prev1" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next1" onclick="plusSlides(1)">&#10095;</a>
+
+
+            </div>
+            <p class="action">All room types (the modern, cottage, or classic) can be reserved as the following:<br>
+                <div class="types">Single Room (1 King Bed)<br> Single Room (1 Queen Bed)<br> Single Room (2 Queen Beds)<br> Double Room (4 Queen Beds)</div>
+            </p>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+
+            </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="grid-item">
+            <h2>Contact Us</h2>
+            <p>We are here to assist you with any possible question.</p>
+            <form method="get" action="thankyou.html">
+                First name:<br>
+                <input type="text" name="firstname" value="John" required>
+                <br> Last name:<br>
+                <input type="text" name="lastname" value="Doe">
+                <br> E-mail:<br>
+                <input type="email" name="email" value="johndoe@email.com">
+                <br> Telephone: <br><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                <br> Your Message:<br>
+                <input type="text" name="comments" placeholder="Please type here...">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p class="foot"><a href="resources.html" target="_blank">Resources</a> |
+            <span id="showDate"></span> | Temple Inn & Suites | &copy; 2019 <br>
+        </p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+
+</html>

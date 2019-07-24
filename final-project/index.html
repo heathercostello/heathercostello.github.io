@@ -17,52 +17,89 @@
 
 <body>
     <header>
-        <img class="logo" src="images/temple-logo.jpg" alt="logo">
+        <img class="logo" src="images/temple-logo-new.jpg" alt="logo">
         <h1 class="name">Temple Inn & Suites</h1>
-        <nav>
-            <ul class="navigation">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="temple-reservation.html">Temple Reservations</a>
-                </li>
-                <li><a href="services.html">Services</a></li>
-                <!-- <button class="service-button">Services</button>
-                <div class="service-dropdown">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="temples.html">Temples</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services 
+                <i class="fa fa-caret-down"></i>
+              </button>
+                <div class="dropdown-content">
                     <a href="services.html">Services</a>
                     <a href="reception.html">Reception</a>
-                    <a href="full-time-missionaries.html">Full Time Missionaries</a>
-                </div> -->
-                <li><a href="contact.html">Contact</a></li>
-                </li>
-            </ul>
-        </nav>
+                    <a href="full-time-missionaries.html">Full-time Temple Missionaries</a>
+                </div>
+            </div>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
     </header>
-    <div class="w3-content w3-display-container">
-        <img class="mySlides" src="images/temple-slc.jpg" style="width:100%" alt="Salt Lake temple">
-        <img class="mySlides" src="images/temple-columbia.jpg" style="width:100%" alt="columbia temple">
-        <img class="mySlides" src="images/temple-switz.jpg" style="width:100%" alt="switzerland temple">
-        <img class="mySlides" src="images/temple-cedar.jpg" style="width:100%" alt="cedar temple">
+    <div class="color">
+        <div class="description">
+            <p>The Temple Inn & Suites is a hotel chain that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. The owner-operated company caters to temple workers,
+                patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. The hotel accommodations and services are available to anyone willing to abide by the terms and policies outlined by
+                the company</p>
+            <p>Temple activities include: Baptisms for the Dead, Sealings, Inistiatories and Temple Sessions.</p>
+        </div>
 
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/temple-hawaii.jpg" style="width:100%">
+                <div class="text">Oahu, Hawaiit</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/temple-cedar.jpg" style="width:100%">
+                <div class="text">Cedar City, Utah</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/temple-columbia.jpg" style="width:100%">
+                <div class="text">Columbia</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+        </div>
+        <p class="action">Click to see Temples around the world.</p>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </div>
-    <h2>
-        Make a reservation with Temple Inn & Suites TODAY!
-    </h2>
-
+    <div class="reservation">
+        <h2>
+            <a href="temple-reservation.html">Make a reservation with Temple Inn & Suites TODAY!</a>
+        </h2>
+    </div>
     <div class="choice-temple">
-        <p>The Concepción Chile Temple is a temple of The Church of Jesus Christ of Latter-day Saints in Concepción, Chile. The intent to construct the temple was announced by church president Thomas S. Monson on October 3, 2009, during the church's semi-annual
-            general conference. The temple was announced concurrently with the Brigham City Utah, Fort Lauderdale Florida, Fortaleza Brazil and Sapporo Japan temples; at the time, the announcement brought the total number of temples worldwide to 151.
-            It is the second temple constructed in Chile, along with the Santiago Chile Temple which was dedicated in 1983.
-            <br>On October 17, 2015, Walter F. González presided at a groundbreaking to signify beginning of construction. Following construction, a public open house was held from September 15 through October 13, 2018, excluding Sundays. The temple was
-            dedicated on October 28, 2018 by Russell M. Nelson.</p>
-        <img class="concepcion" src="images/temple-cocepcion.jpg" alt="Concepcion Temple">
+        <article>
+            <img class="concepcion" src="images/temple-cocepcion.jpg" alt="Concepcion Temple">
+            <p>The Concepción Chile Temple is a temple of The Church of Jesus Christ of Latter-day Saints in Concepción, Chile. The intent to construct the temple was announced by church president Thomas S. Monson on October 3, 2009, during the church's
+                semi-annual general conference. The temple was announced concurrently with the Brigham City Utah, Fort Lauderdale Florida, Fortaleza Brazil and Sapporo Japan temples; at the time, the announcement brought the total number of temples worldwide
+                to 151. It is the second temple constructed in Chile, along with the Santiago Chile Temple which was dedicated in 1983. On October 17, 2015, Walter F. González presided at a groundbreaking to signify beginning of construction. Following
+                construction, a public open house was held from September 15 through October 13, 2018, excluding Sundays. The temple was dedicated on October 28, 2018 by Russell M. Nelson.</p>
+        </article>
     </div>
     <footer>
         <p class="foot"><a href="resources.html" target="_blank">Resources</a> |
             <span id="showDate"></span> | Temple Inn & Suites | &copy; 2019 <br>
         </p>
     </footer>
-
+    <script src="scripts/hamburger.js"></script>
     <script src="scripts/scroll.js"></script>
     <script src="scripts/currentdate.js"></script>
 </body>
