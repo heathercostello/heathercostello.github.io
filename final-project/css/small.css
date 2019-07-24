@@ -384,7 +384,7 @@
                     margin: 10px;
                     text-align: center;
                     line-height: 10px;
-                    font-size: 12px;
+                    font-size: 14px;
                 }
                 
                 .form-reserve {
@@ -445,4 +445,41 @@
                 .prev1 {
                     left: 0;
                     border-radius: 3px 0 0 3px;
+                }
+                /* TEMPLE PAGE */
+                
+                .gallery {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-gap: .1px;
+                    width: 100%;
+                    vertical-align: middle;
+                }
+                
+                .gallery img {
+                    width: 98%;
+                    height: auto;
+                }
+                
+                .headertemple,
+                .desc {
+                    text-align: center;
+                }
+                
+                .background {
+                    background-color: papayawhip;
+                }
+                /* TEMPLE EXAMPLES */
+                
+                .row {
+                    display: flex;
+                }
+                
+                .column {
+                    flex: 50%;
+                    padding: 12px;
+                    text-align: left;
+                    border-style: groove;
+                    border-color: #DCD0C0;
+                    margin: 15px;
                 }

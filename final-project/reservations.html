@@ -47,13 +47,14 @@
         <p>In order to make a reservation, please fill out the following form. The fields with * are mandatory.</p>
     </div>
     <form class="form-flex-container" method="get" action="thankyou.html">
-        <div> *Location:
-            <input type="text" name="location" placeholder="City, State" required></div>
         <br>
+        <div> *Location:<br>
+            <input type="text" name="location" placeholder="City, State" required></div>
+
         <div>*Date:<br>
             <input type="date" name="date"><br><br> *Number of Rooms (between 1 and 30):
             <input type="number" name="quantity" min="1" max="30" required></div>
-        <br>
+
         <div> *Room Type:
             <br>
             <input type="radio" name="roomtype" value="king" checked>Single Room (1 king bed)<br><br>

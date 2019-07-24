@@ -14,7 +14,7 @@
         margin: 10px;
         text-align: center;
         line-height: 10px;
-        font-size: 12px;
+        font-size: 16px;
     }
     .grid-container-reception {
         display: grid;
@@ -23,5 +23,23 @@
         background-color: rgb(235, 225, 225);
         padding: 15px;
         border: 1px solid rgb(172, 153, 91);
+    }
+    /* TEMPLE PAGE */
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .1px;
+        width: 100%;
+        vertical-align: middle;
+    }
+    .gallery img {
+        width: 100%;
+        justify-items: center;
+    }
+    .fig:hover {
+        box-shadow: 0 0 50px #333;
+    }
+    .fig:hover {
+        box-shadow: 0 0 50px #333;
     }
 }
