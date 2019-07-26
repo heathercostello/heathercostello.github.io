@@ -42,4 +42,11 @@
     .fig:hover {
         box-shadow: 0 0 50px #333;
     }
+    .map {
+        border-style: double;
+        border-color: rgb(165, 144, 116);
+        border-width: 6px;
+        width: 400px;
+        height: 350px;
+    }
 }

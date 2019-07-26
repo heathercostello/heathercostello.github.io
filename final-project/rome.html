@@ -8,7 +8,8 @@
     <meta name="keywords" content="Temple, Temples, Temple Services">
     <meta name="description" content="Rome Temple Page">
     <meta name="author" content="Heather Costello">
-
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -58,7 +59,29 @@
                 <p><b>Session Schedule:</b><br>Appointments Only<br> (Tues-Fri) 4:30PM, 6:00PM, 7:30PM<br> (Sat) 9:00 AM, 10:30 AM, 12:00 PM, 3:00 PM, 4:30 PM, 6:00 PM
                 </p>
                 <p><b>Temple Closure Schedule (JSON):</b></p>
-                <p><b>Current Weather Summary (API):</b></p>
+                <div class="weatherstats">
+                    <p>
+                        Current Weather
+                    </p><br>
+                    <p>Currently:
+                        <span id="value1"></span>
+                    </p>
+                    <p>High Temp:
+                        <span id="temp"></span> F&deg;
+                    </p>
+                    <p>Humidity:
+                        <span id="humidity"></span>&percnt;
+                    </p>
+                    <p>Wind Speed:
+                        <span id="windspeed"></span>mph
+                    </p>
+                    <p>Wind Direction:
+                        <span id="winddirection"></span>&deg;
+                    </p>
+                    <p>
+                        <span id="output"></span>
+                    </p>
+                </div>
 
             </div>
         </div>
@@ -69,6 +92,8 @@
         </p>
     </footer>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weatherstatsrome.js"></script>
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/currentdate.js"></script>
 </body>
 

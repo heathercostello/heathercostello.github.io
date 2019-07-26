@@ -8,6 +8,8 @@
     <meta name="keywords" content="Temple, Temples, Temple Services">
     <meta name="description" content="Brighan City Temple Page">
     <meta name="author" content="Heather Costello">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -57,7 +59,27 @@
                 <p><b>Session Schedule:</b><br>For all Walk-ins<br> (Tues-Sat) Every hour from 7:00AM - 7:00PM
                 </p>
                 <p><b>Temple Closure Schedule (JSON):</b></p>
-                <p><b>Current Weather Summary (API):</b></p>
+                <div class="weatherstats">
+                    <p><b>Current Weather</b></p>
+                    <p>Currently:
+                        <span id="value1"></span>
+                    </p>
+                    <p>High Temp:
+                        <span id="temp"></span> F&deg;
+                    </p>
+                    <p>Humidity:
+                        <span id="humidity"></span>&percnt;
+                    </p>
+                    <p>Wind Speed:
+                        <span id="windspeed"></span>mph
+                    </p>
+                    <p>Wind Direction:
+                        <span id="winddirection"></span>&deg;
+                    </p>
+                    <p>
+                        <span id="output"></span>
+                    </p>
+                </div>
 
             </div>
         </div>
@@ -70,6 +92,8 @@
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherstatsbrigham.js"></script>
 </body>
 
 </html>

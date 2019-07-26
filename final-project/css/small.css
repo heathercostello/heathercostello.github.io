@@ -100,8 +100,22 @@
                 .dropdown:hover .dropdown-content {
                     display: block;
                 }
+                /* DESCRIPTION OF SITE */
+                
+                .description {
+                    padding: 10px;
+                    background-color: rgb(253, 241, 226);
+                }
+                
+                .color {
+                    background-color: rgb(253, 241, 226);
+                }
                 /* SCROLL PHOTOS */
                 /* Slideshow container */
+                
+                .slidetemple {
+                    width: 100%;
+                }
                 
                 .slideshow-container {
                     max-width: 1000px;
@@ -238,6 +252,11 @@
                 .choicetemple {
                     font-size: 40px;
                 }
+                
+                article {
+                    padding: 10px;
+                    background-color: rgb(253, 241, 226);
+                }
                 /* FOOTER  */
                 
                 footer {
@@ -266,6 +285,10 @@
                     border: 1px solid rgb(172, 153, 91);
                 }
                 
+                .gcr-title {
+                    text-align: center;
+                }
+                
                 .grid-container-reception div img {
                     width: 300px;
                     height: 200px;
@@ -275,11 +298,13 @@
                     background-color: inherit;
                     font-size: 20px;
                     padding: 20px 0;
+                    font-family: 'Muli', sans-serif;
                 }
                 /* SERVICES PAGE */
                 
                 .speciallist {
                     list-style-type: circle;
+                    font-family: 'Muli', sans-serif;
                 }
                 
                 .special {
@@ -294,7 +319,7 @@
                 
                 .space {
                     padding: 20px;
-                    background-color: papayawhip;
+                    background-color: rgb(253, 241, 226);
                 }
                 
                 .title {
@@ -321,7 +346,6 @@
                 
                 .contactmap {
                     display: flex;
-                    flex-direction: right;
                     border-style: double;
                     border-width: 6px;
                 }
@@ -341,6 +365,7 @@
                     padding: 10px;
                     color: white;
                     text-align: center;
+                    font-family: 'Muli', sans-serif;
                 }
                 
                 input[type=text],
@@ -372,11 +397,12 @@
                 /* RESERVATION PAGE  */
                 
                 .form-flex-container {
-                    background-color: papayawhip;
+                    background-color: rgb(253, 241, 226);
                     display: flex;
                     flex-wrap: wrap;
                     align-items: center;
                     flex-direction: column;
+                    font-family: 'Muli', sans-serif;
                 }
                 
                 .form-flex-container>div {
@@ -388,7 +414,7 @@
                 }
                 
                 .form-reserve {
-                    background-color: papayawhip;
+                    background-color: rgb(253, 241, 226);
                     text-align: center;
                     height: 100%;
                     border: 3px;
@@ -398,7 +424,7 @@
                 }
                 
                 .form-reserve h2 {
-                    background-color: papayawhip;
+                    background-color: rgb(253, 241, 226);
                     margin: unset;
                 }
                 /* FULL-TIME MISSIONARY PAGE */
@@ -464,10 +490,18 @@
                 .headertemple,
                 .desc {
                     text-align: center;
+                    font-family: 'Muli', sans-serif;
+                    background-color: rgb(253, 241, 226);
+                    text-align: center;
+                    border: 3px;
+                    border-style: groove;
+                    border-color: rgb(253, 241, 226);
+                    color: #373737;
+                    padding: 3px;
                 }
                 
                 .background {
-                    background-color: papayawhip;
+                    background-color: rgb(253, 241, 226);
                 }
                 /* TEMPLE EXAMPLES */
                 
@@ -482,4 +516,17 @@
                     border-style: groove;
                     border-color: #DCD0C0;
                     margin: 15px;
+                }
+                /* FONTS */
+                
+                p {
+                    font-family: 'Muli', sans-serif;
+                }
+                
+                header,
+                footer,
+                h1,
+                h2,
+                h3 {
+                    font-family: 'Lora', serif;
                 }
