@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 
-<body>
+<body onLoad="load()">
     <header>
         <img class="logo" src="images/temple-logo-new.jpg" alt="logo">
         <h1 class="name">Temple Inn & Suites</h1>
@@ -44,25 +44,32 @@
         <div class="row">
             <div class="column">
                 <p><b>Address:</b> <br>Via di Settebagni 376<br> Rome RM<br>Italy<br></p>
+                <hr>
                 <p><b>Telephone:</b><br> (39) 06-9480-5050</p>
+                <hr>
                 <p><b>Email:</b><br>romeitalytemple@ldsmail.com</p>
+                <hr>
                 <p><b>Services:</b><br> Clothing rental available <br>No cafeteria available <br>Patron housing available<br> Distribution center nearby</p>
+                <hr>
                 <p><b>History:</b> <br>Announced on 4 October 2008 <br>Groundbreaking and Site Dedication:  23 October 2010 by Thomas S. Monson<br>Dedication:  10–12 March 2019 by Russell M. Nelson</p>
                 <p>The Rome Italy Temple was the thirteenth temple built in Europe and the first built in Italy. A charming Italian villetta, which stood at the highest point of the Rome Italy Temple site, was razed to make way for the buildings in the temple
                     complex. The villetta served for a time as an apartment for the full-time missionaries. The dedication of the Rome Italy Temple marked the first time in history when the entire First Presidency and Quorum of the Twelve Apostles gathered
                     to one location outside the United States. All fifteen brethren posed for a photograph in the visitors' center taken in front of the reproductions of Bertel Thorvaldsen's statues of the Christus and twelve apostles. </p>
+                <hr>
 
             </div>
             <div class="column">
                 <p><b>Ordinance Schedule:</b><br> For all Walk-ins and Appointments<br> (Tues-Sat) 4:30PM - 7:30PM<br> (Sat) 9:00AM - 12:00PM 4:00PM - 7:00PM<br> For any group appoitment, please call the temple.
                 </p>
+                <hr>
                 <p><b>Session Schedule:</b><br>Appointments Only<br> (Tues-Fri) 4:30PM, 6:00PM, 7:30PM<br> (Sat) 9:00 AM, 10:30 AM, 12:00 PM, 3:00 PM, 4:30 PM, 6:00 PM
                 </p>
-                <p><b>Temple Closure Schedule (JSON):</b></p>
+                <hr>
+                <p><b><span id="closedate"></span></b></p>
                 <div class="weatherstats">
                     <p>
                         Current Weather
-                    </p><br>
+                    </p>
                     <p>Currently:
                         <span id="value1"></span>
                     </p>
@@ -91,10 +98,10 @@
             <span id="showDate"></span> | Temple Inn & Suites | &copy; 2019 <br>
         </p>
     </footer>
+    <script src="data/templeclosure.json"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/weatherstatsrome.js"></script>
     <script src="scripts/windchill.js"></script>
-    <script src="templeclosure.json"></script>
     <script src="scripts/currentdate.js"></script>
 </body>
 

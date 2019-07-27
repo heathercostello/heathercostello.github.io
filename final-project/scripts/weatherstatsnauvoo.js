@@ -15,3 +15,21 @@ weatherObject.onload = function() {
 
     calculatewc();
 }
+
+// JSON
+function load() {
+    var mydata = JSON.parse(data);
+    var result = '';
+
+    for (let i = 0; i < mydata.length; i++) {
+        var item = mydata[i];
+
+        item.templeNamesAndDates.forEach(function(namesAndDates) {
+            if (namesAndDates.templeName === 'Nauvoo') {
+                result += namesAndDates.dates.join('<br>') + '<hr>';
+            }
+        })
+
+        document.getElementById('closedate').innerHTML = "Temple Closure Dates" + '<br>' + result;
+    }
+}

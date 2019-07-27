@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 
-<body>
+<body onLoad="load()">
     <header>
         <img class="logo" src="images/temple-logo-new.jpg" alt="logo">
         <h1 class="name">Temple Inn & Suites</h1>
@@ -44,22 +44,29 @@
             <div class="column">
                 <p><b>Address:</b> <br>Calle Del Templo No 2 Madrid
                     <br> 28030 Madrid<br>Spain<br></p>
+                <hr>
                 <p><b>Telephone:</b><br>(34)91-214-2607</p>
+                <hr>
                 <p><b>Email:</b><br>madridspaintemple@ldsmail.com</p>
+                <hr>
                 <p><b>Services:</b><br> Clothing rental available <br>Cafeteria available <br>Patron housing available<br> Distribution center nearby</p>
+                <hr>
                 <p><b>History:</b> <br>Announced on 4 April 1993 <br>Groundbreaking and Site Dedication: 11 June 1996<br>Dedication: 19 March 1999</p>
                 <p>The Madrid Spain Temple was the seventh temple built in Europe and the first built in Spain. The Madrid Spain Temple is part of a complex with a stake center and patron housing facility often referred to as the "Temple Square of Madrid."
                     Missionary work commenced in Spain when a religious liberty law was passed in 1967, allowing for the official recognition of the Church. Clark Hinckley, son of President Gordon B. Hinckley, was among the first four missionaries sent
                     to Spain from other missions.
                 </p>
 
+
             </div>
             <div class="column">
                 <p><b>Ordinance Schedule:</b><br> For all Walk-ins and Appointments<br> (Tues-Fri) 8:00PM - 7:00PM<br> (Sat) 7:00AM - 6:00PM<br> For any group appoitment, please call the temple.
                 </p>
+                <hr>
                 <p><b>Session Schedule:</b><br>Walk-ins and Appointments<br> (Tues-Fri) 8:00AM - 6:00PM<br> (Sat) 7:00AM - 5:00PM
                 </p>
-                <p><b>Temple Closure Schedule (JSON):</b></p>
+                <hr>
+                <p><b><span id="closedate"></span></b></p>
                 <div class="weatherstats">
                     <p><b>Current Weather</b></p>
                     <p>Currently:
@@ -91,10 +98,12 @@
             <span id="showDate"></span> | Temple Inn & Suites | &copy; 2019 <br>
         </p>
     </footer>
+    <script src="data/templeclosure.json"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/weatherstatsmadrid.js"></script>
+
 </body>
 
 </html>

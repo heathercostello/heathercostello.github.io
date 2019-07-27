@@ -16,19 +16,20 @@ weatherObject.onload = function() {
     calculatewc();
 }
 
-// Temple Closure JSON
-var article = document.querySelector('article');
-var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
-var request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
-request.onload = function() {
-    var townData = request.response;
-    showData(townData);
-}
+// JSON
+function load() {
+    var mydata = JSON.parse(data);
+    var result = '';
 
-function showData(jsonObj) {
-    var data = jsonObj['templeClosureDates'];
+    for (let i = 0; i < mydata.length; i++) {
+        var item = mydata[i];
 
+        item.templeNamesAndDates.forEach(function(namesAndDates) {
+            if (namesAndDates.templeName === 'Rome') {
+                result += namesAndDates.dates.join('<br>') + '<hr>';
+            }
+        })
+
+        document.getElementById('closedate').innerHTML = "Temple Closure Dates" + '<br>' + result;
+    }
 }

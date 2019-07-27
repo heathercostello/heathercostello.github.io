@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 
-<body>
+<body onLoad="load()">
     <header>
         <img class="logo" src="images/temple-logo-new.jpg" alt="logo">
         <h1 class="name">Temple Inn & Suites</h1>
@@ -44,8 +44,11 @@
         <div class="row">
             <div class="column">
                 <p><b>Address:</b> <br>250 S Main St<br> Brigham City UT 84302-2560<br>United States<br></p>
+                <hr>
                 <p><b>Telephone:</b><br>(1)435-695-2170</p>
+                <hr>
                 <p><b>Email:</b><br>brighamcitytemple@ldsmail.com</p>
+                <hr>
                 <p><b>Services:</b><br> No clothing rental available <br>No cafeteria available <br>No patron housing available<br> Distribution center nearby</p>
                 <p><b>History:</b> <br>Announced on 3 October 2009 <br>Groundbreaking and Site Dedication:  31 July 2010 by Boyd K. Packer<br>Dedication: 23 September 2012 by Boyd K. Packer</p>
                 <p>The Brigham City Utah Temple will be the fourteenth temple built in Utah and the first built in Box Elder County. The Brigham City Utah Temple District covers the same region as the original Box Elder Stake. The Brigham City Utah Temple
@@ -56,9 +59,11 @@
             <div class="column">
                 <p><b>Ordinance Schedule:</b><br> For all Walk-ins and Appointments<br> (Tues-Fri) 7:00AM - 8:00PM <br> (Sat) 7:00AM - 7:00PM<br> For any group appoitment, please call the temple.
                 </p>
+                <hr>
                 <p><b>Session Schedule:</b><br>For all Walk-ins<br> (Tues-Sat) Every hour from 7:00AM - 7:00PM
                 </p>
-                <p><b>Temple Closure Schedule (JSON):</b></p>
+                <hr>
+                <p><b><span id="closedate"></span></b></p>
                 <div class="weatherstats">
                     <p><b>Current Weather</b></p>
                     <p>Currently:
@@ -90,10 +95,13 @@
             <span id="showDate"></span> | Temple Inn & Suites | &copy; 2019 <br>
         </p>
     </footer>
+    <script src="data/templeclosure.json"></script>
+    <script src="scripts/weatherstatsbrigham.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
-    <script src="scripts/weatherstatsbrigham.js"></script>
+
+
 </body>
 
 </html>
