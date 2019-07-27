@@ -15,3 +15,20 @@ weatherObject.onload = function() {
 
     calculatewc();
 }
+
+// Temple Closure JSON
+var article = document.querySelector('article');
+var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+request.onload = function() {
+    var townData = request.response;
+    showData(townData);
+}
+
+function showData(jsonObj) {
+    var data = jsonObj['templeClosureDates'];
+
+}
