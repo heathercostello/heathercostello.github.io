@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>HTML5 tags</title>
+    <meta name="description" content="Topic 10">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Topic 10</h1>
+    </header>
+    <main>
+
+        <h2>HTML5 tags: Video, Audio, Canvas</h2>
+
+        <!-- VIDEO TAG -->
+        <hr>
+        <h2>Video Tag</h2>
+
+
+
+        <p>The video tag specifies video, such as a movie clip or other video streams. It is a new tag for HTML5.</p>
+
+        <p>Currently, there are 3 supported video formats for the video element: MP4, WebM, and Ogg</p>
+
+        <p>The code always has to open up with an opening and a closing 'video' tag.</p>
+
+        <h3>Attributes</h3>
+
+        <p>One can use 'attributes' to specify the peramaters of the video.</p>
+
+        <p>Below is an example of a video with the attributes of 'height', 'width', 'autoplay', 'loop', and 'src'</p>
+
+        <p>'src' is ALWAYS needed since that is where we get the video file.</p>
+
+        <P>'autoplay' makes it so the user cannot click play, pause or use the volume</p>
+
+        <p>'loop' will play the video over and over</p>
+
+        <p>'width' and 'height' describe how large the video will be shown on a browser in pixels</p>
+
+        <h3>Basic Example of a video tag</h3>
+
+        <p>This example below shows the 'loop' and 'autoplay' attributes.</p>
+
+        <img class="code" src="../images/code1.png" alt="code1"><br>
+
+        <video width="320" height="240" autoplay loop>
+            <source src="../video/ocean.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>This example shows the attribute 'controls'<br> 'controls' is what adds on the play, pause, and sound buttons
+        </p>
+
+        <img class="code" src="../images/code2.png" alt="code2"><br>
+
+        <video width="320" height="240" controls>
+            <source src="../video/ocean.mp4" type="video/mp4">
+            <source src="../video/ocean.oog" type="video/oog">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>*One can put more sources as shown in the example above.<br> If the computer does not recognize any of the sources,
+            <br> it will write out what is between the video tags.<br> In this case, it would write out "Your browser does not support the video tag.*
+        </p>
+
+        <!-- AUDIO TAG -->
+        <hr>
+        <h2>Audio Tag</h2>
+
+
+        <p>The audio tag defines sound, such as music or other audio streams.<br> It is very similar to the video tag.
+        </p>
+
+        <p>Currently, there are 3 supported video formats for the audio element: MP3, OGG, and WAV</p>
+
+        <p>The code always has to open up with an opening and a closing 'audio' tag.</p>
+
+        <h3>Attributes</h3>
+
+        <p>One can use 'attributes' to specify the peramaters of the audio.</p>
+
+        <p>'src' is ALWAYS needed since that is where we get the video file.</p>
+
+        <P>'autoplay' makes it so the user cannot click play, pause or use the volume</p>
+
+        <p>'controls' specifies that audio controls should be displayed</p>
+
+        <p>'loop' will play the video over and over</p>
+
+        <p>'muted' specifies that the audio output should be muted</p>
+
+        <p>'preload' specifies if and how the author thinks the audio should be loaded when the page laods</p>
+
+        <h3>Basic Example of an audio tag</h3>
+
+        <p>This example below shows the controls attribute.</p>
+
+        <img class="code" src="../images/audiocode.png" alt="audiocode"><br>
+
+        <audio controls>
+            <source src="../audio/example.mp3" type="audio/mp3">
+            <source src="../audio/example.mp3" type="audio/oog">
+            Your browser does not support the audio tag.
+        </audio>
+
+
+        <p>*One can put more sources as shown in the example above.<br> If the computer does not recognize any of the sources,
+            <br> it will write out what is between the video tags.<br> In this case, it would write out "Your browser does not support the video tag.*
+        </p>
+
+        <!-- CANVAS TAG -->
+        <hr>
+        <h2>Canvas Tag</h2>
+
+        <h3>Definition and Usage</h3>
+        <p>The 'canvas' tag is used to draw graphics, on the fly, via scripting (usually JavaScript).</p>
+        <p>The 'canvas' tag is only a container for graphics, you must use a script to actually draw the graphics.</p>
+        <p>Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</p>
+        <p>Canvas can:
+            <ul>
+                <li>draw text</li>
+                <li>draw graphics</li>
+                <li>be animated</li>
+                <li>be interactive</li>
+                <li>be used in games</li>
+            </ul>
+        </p>
+
+        <h3>What does canvas look like in HTML5?</h3>
+
+        <img class="code" src="../images/canvascode1.png" alt="canvas code">
+
+        <p>The 'canvas 'element must have an id attribute so it can be referred to by JavaScript.<br> The width and height attribute is necessary to define the size of the canvas.<br> You can have multiple 'canvas' elements on one HTML page.</p>
+
+        <h3>Canvas Drawing Example</h3>
+
+        <p>*All drawing on the HTML canvas must be done with JavaScript*</p>
+
+        <img class="code" src="../images/canvascode2.png" alt="canvascode 2">
+
+        <canvas id="my_canvas" width="300" height="300" style="border:2px dotted #a4b8a4;">
+                Your browser does not support the canvas element.
+        </canvas>
+
+        <script>
+            var canvas = document.getElementById("my_canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#CCE2D1";
+            ctx.fillRect(0, 0, 150, 75);
+        </script>
+
+        <h3>Draw a Line with Canvas</h3>
+
+        <p>"Define a starting point in position (0,0), and an ending point in position (200,100).<br> Then use the stroke() method to actually draw the line:"</p>
+
+        <p>To draw a straight line on a canvas, use the following methods:
+            <ul>
+                <li>moveTo(x,y) - defines the starting point of the line</li>
+                <li>lineTo(x,y) - defines the ending point of the line</li>
+            </ul>
+            To actually draw the line, you must use one of the "ink" methods, like stroke().</p>
+
+        <img class="code" src="../images/canvascode3.png"><br>
+
+        <canvas id="myCanvas2" width="300" height="300" style="border:2px dotted #471717;">
+                Your browser does not support the canvas element.
+        </canvas>
+
+        <script>
+            var canvas = document.getElementById("myCanvas2");
+            var ctx = canvas.getContext("2d");
+            ctx.moveTo(0, 0);
+            ctx.lineTo(300, 300);
+            ctx.stroke();
+        </script>
+
+    </main>
+    <footer>
+        <p>&copy; 2019 - Heather Renee Costello - Arizona -
+            <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+    </footer>
+</body>
+
+</html>

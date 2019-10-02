@@ -1,0 +1,11 @@
+body {
+    display: block;
+    background: rgb(139, 154, 146);
+    margin: 5px;
+    align-content: center;
+}
+
+.code {
+    margin: 5px;
+    width: 300px;
+}
