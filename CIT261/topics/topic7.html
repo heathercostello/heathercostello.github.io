@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CSS3 using JavaScript</title>
+    <meta name="description" content="Topic 4">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <h1>CSS3 using JavaScript</h1>
+    <h2>Manipulating CSS Class Properties Using JavaScript</h2>
+    <main>
+        <img id="beachPic" src="../images/beachfoam.jpg">
+        <div id="picSlideContainer">
+            <br>
+            <input type="range" value="50" min="1" max="100" id="picWidth" oninput="adjustPercentage(this.value)" onchange="adjustPercentage(this.value)">
+            <span id="picSliderOutput"></span>
+            <button class="myButtons" type="button" onclick="changePictureWidth()">
+					Change Picture Size
+				</button>
+        </div>
+
+        <hr>
+
+        <p id="text">Hello World</p>
+        <div id="textSlideContainer">
+            <input type="range" value="18" min="8" max="32" id="fontSize" oninput="adjustPixels(this.value)" onchange="adjustPixels(this.value)">
+            <span id="textSliderOutput"></span>
+            <button class="myButtons" type="button" onclick="changeFontSize()">
+					Change Font Size
+				</button>
+        </div>
+
+        <p>Select a color to change the font color: </p>
+        <select id="fontColor">
+				<option value="default" selected disabled hidden>Select Color ...</option>
+				<option value="red">Red</option>
+				<option value="blue">Blue</option>
+				<option value="green">Green</option>
+				<option value="purple">Purple</option>
+				<option value="pink">Pink</option>
+				<option value="gold">Gold</option>
+				<option value="black">Black</option>
+					</select>
+        <button type="button" onclick="changeFontColor()" class="myButtons">Change Font Color</button>
+
+        <hr>
+
+        <p>Want to reload the page? Click here:
+            <button type="button" onclick="clearItems()" class="myButtons">Reset</button>
+        </p>
+
+        <hr>
+
+        <button type="button" class="myButtons" onclick="window.location.href='../index.html'">Home</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2019 - Heather Renee Costello - Arizona -
+            <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+        <script src="../scripts/cssmanipulation.js"></script>
+    </footer>
+</body>
+
+</html>
