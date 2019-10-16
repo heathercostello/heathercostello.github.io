@@ -13,7 +13,9 @@
     <h1>CSS3 using JavaScript</h1>
     <h2>Manipulating CSS Class Properties Using JavaScript</h2>
     <main>
-
+        <p>JavaScript to change HTML style</p>
+        <p>To change the style of an HTML element, use this syntax:</p>
+        <img src="../images/CSS-javascript.png" alt="javascriptexample">
         <hr>
 
         <p id="text">Hello World</p>
@@ -21,26 +23,27 @@
             <input type="range" value="21" min="8" max="50" id="fontSize" oninput="adjustPixels(this.value)" onchange="adjustPixels(this.value)">
             <span id="textSliderOutput"></span>
             <button class="myButtons" type="button" onclick="changeFontSize()">
-					Change Font Size
-				</button>
+                Change Font Size
+            </button>
         </div>
 
         <p>Select a color to change the font color: </p>
         <select id="fontColor">
-				<option value="default" selected disabled hidden>Select Color</option>
-				<option value="red">Red</option>
-				<option value="pink">Pink</option>
-				<option value="green">Green</option>
-				<option value="grey">Grey</option>
-				<option value="yellow">Yellow</option>
-				<option value="gold">Gold</option>
-				<option value="black">Black</option>
-					</select>
+            <option value="default" selected disabled hidden>Select Color</option>
+            <option value="red">Red</option>
+            <option value="pink">Pink</option>
+            <option value="green">Green</option>
+        </select>
         <button type="button" onclick="changeFontColor()" class="myButtons">Change Font Color</button>
 
-        <hr>
+        <input type="button" value="Hide text" onclick="document.getElementById('text').style.visibility='hidden'">
+        <input type="button" value="Show text" onclick="document.getElementById('text').style.visibility='visible'">
 
-        <button type="button" class="myButtons" onclick="window.location.href='../261index.html'">Back to Topics</button>
+        <br>
+
+        <hr>
+        <button type="button" class="myButtons" onclick="window.location.href='../261index.html'">Back to
+            Topics</button>
     </main>
 
     <footer>
