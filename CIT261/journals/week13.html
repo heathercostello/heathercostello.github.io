@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Week 13 Journal| Heather R. Costello | BYU-Idaho</title>
+    <meta name="description" content="Assignement portal page for Heather">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Heather Costello</h1>
+    </header>
+    <main>
+        <h2>Week 13</h2>
+        <p>
+
+            import java.util.Scanner; public class w4dot2 { public static void main(String[] args) { Scanner input = new Scanner(System.in); // Tells the user what the program does. System.out.print("Given your name, hours worked, and hourly wage, this program calculates
+            your \n" + "gross pay, state withholding tax, federal withholding tax, and your net pay.\n" + "It then displays your pay stub.\n"); // Prompts the user to enter their first and last name. System.out.print("Enter your first and last name: ");
+            // Gets the user's input and saves it as a String. String name = input.nextLine(); // Prompts the user to enter the number of hours they worked this week. System.out.print("Enter the hours you worked this week: "); // Gets the user's input
+            and saves it. Double hours = Double.valueOf(input.nextLine()); // Prompts the user to enter their hourly wage. System.out.print("Enter your hourly wage: "); // Get's the user's input and saves it. Double wage = Double.valueOf(input.nextLine());
+            // Calculates the state withholding tax (0.09%) and the federal withholding tax (0.20%). double gross = hours * wage; double stax = 0.09; double state = stax * gross; double ftax = 0.2; double federal = ftax * gross; // Calculates your net
+            pay after subtracting the withholding taxes. double net = gross - (state + federal); // Outputs a pay statement as shown in the example System.out.print("\nPay Stub for " + name + "\n"); System.out.print("Hours Worked: " + hours + "\n"); System.out.print("Hourly
+            Wage: " + wage + "\n"); System.out.print("Gross Pay: " + gross + "\n"); System.out.print("State Tax Withheld: " + state + "\n"); System.out.print("Federal Tax Withheld: " + federal + "\n"); System.out.print("Net Pay: " + net + "\n"); // Outputs
+            a goodbye message. System.out.println("Goodbye."); } }
+        </p>
+        <a href="../261index.html">Back to CIT 261 Portal</a></li>
+    </main>
+    <footer>
+        <p>&copy; 2019 - Heather Renee Costello - Arizona -
+            <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+    </footer>
+</body>
+
+</html>

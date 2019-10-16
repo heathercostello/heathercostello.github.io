@@ -9,3 +9,9 @@ body {
     margin: 5px;
     width: 300px;
 }
+
+#code {
+    width: 90%;
+    margin: auto;
+    align-content: center;
+}
