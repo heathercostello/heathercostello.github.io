@@ -18,7 +18,7 @@ function adjustPixels(pixels) {
 function myMove() {
     var elem = document.getElementById("animate");
     var pos = 0;
-    var id = setInterval(frame, 5);
+    var id = setInterval(frame, .0005);
 
     function frame() {
         if (pos == 350) {
