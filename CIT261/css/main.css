@@ -92,3 +92,69 @@ a.example3:hover {
 .examplepicc {
     width: 500px;
 }
+
+
+/* TOPIC 12 */
+
+#poppies {
+    transform: skewx(15deg) translatex(150px);
+    transform-origin: bottom right;
+}
+
+#poppiesHover:hover {
+    transform: skewx(20deg) translatex(10px);
+    transform-origin: bottom right;
+}
+
+#code12 {
+    width: 400px;
+    padding: 20px;
+}
+
+
+/* TOPIC 13 */
+
+#topic13div {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    position: relative;
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+@keyframes example {
+    0% {
+        background-color: pink;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: yellow;
+        left: 100px;
+    }
+    50% {
+        background-color: whitesmoke;
+        left: 200px;
+    }
+    75% {
+        background-color: burlywood;
+        left: 300px;
+    }
+    100% {
+        background-color: pink;
+        left: 400px;
+    }
+}
+
+#topic13csscode {
+    width: 300px;
+}
+
+#topic13htmlcode {
+    width: 300px;
+}
