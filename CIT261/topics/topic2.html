@@ -12,12 +12,80 @@
 <body>
     <h1>JavaScript Objects</h1>
     <h2>Object Creation Functions, Inheritance, Properties, Methods, Instantiation</h2>
+    <p>Objects are everything in JavaScript. If you can understand objects then you will be able to understand JavaScript.</p>
+    <p>In JavaScript, almost everything is an object. All JavaScript values, except primitives, are objects.</p>
+    <ul>
+        <li>Booleans can be objects (if defined with the new keyword)
+        </li>
+        <li>Numbers can be objects (if defined with the new keyword)
+        </li>
+        <li>Strings can be objects (if defined with the new keyword)
+        </li>
+        <li>Dates are always objects
+        </li>
+        <li>Maths are always objects
+        </li>
+        <li>Regular expressions are always objects
+        </li>
+        <li>Arrays are always objects
+        </li>
+        <li>Functions are always objects
+        </li>
+        <li>Objects are always objects
+        </li>
+    </ul>
+    <hr>
+    <h3>Creation</h3>
+    <h4>Object Initializers -used to create objects. There are three different ways. Spaces do not matter.</h4>
+    <p>var car = {<br> carMake: "Ford",<br> carModel: "F150",<br> carYear: "2013"<br> };
+        <br>
+    </p>
+
+    <p>var car = { carMake: "Ford", carModel: "F150", carYear: "2013"};
+        <br>
+    </p>
+
+    <p>var car = new Object();<br> car.carMake = "Ford";<br> car.carModel = "F150";<br> car.carYear = "2013";<br>
+    </p>
+    <hr>
+
+    <h3>Properites</h3>
+    <p>A collection of properties are basically whatmakes up an object. A property is made up of a key (name) and a value. A dictionary is a great example of this. The dictionary represents an object, the term represents the key, and the definition represents
+        the value. Properties are used to define the characteristic of the object.
+    </p>
+    <p>To access the property, we use this syntax<br> objectName.propertyName
+        <br>
+    </p>
+    <p>It is easy to add and delete properties.</p>
+    <p>Example of creating an object, adding properties, and then deleting a property.</p>
+    <p>*creating a new object</p>
+    <p>var arizonaStaples = new Object ();<br> *adding three new properties<br> arizonaStaples.food = "Bean Burritos";<br> arizonaStaples.weather = "Sunny";<br> arizonaStaples.landscape = "Cactus";<br> *deleting one property<br> delete arizonaStaples.weather;</p>
+    <hr>
+
+    <h3>Methods</h3>
+    <p>Methods are stored in an object the same way that a property is. Instead of just storing a value though, they store a function.</p>
+    <h4>Example</h4>
+    <p>var car = { carMake: "Ford", carModel: "F150", carYear: "2013", carMM: "function"(){return this.carMake + this.carModel}};
+        <br>
+    </p>
+    <hr>
+
+    <h3>Inheritance</h3>
+    <p>All JavaScript objects inherit properties and methods from a prototype. The Object.prototype is on top of the prototype inheritance chain. Once the prototype has been created, newinstances of the object can be made. The object can then be changed
+        by adding new properties or methods and then ahve new objects created from it. It is cool because it allows code to be reused without it having to be written again.
+    </p>
+    <h4>Example</h4>
+    <img id="topic2code" src="../images/topic2_code_prototype.png" alt="prototype">
+    <p id="example2"></p>
+    <hr>
+
+    <hr>
 
 
     <footer>
         <p>&copy; 2019 - Heather Renee Costello - Arizona -
             <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
-        <script src=""></script>
+        <script src="../scripts/topic2.js"></script>
     </footer>
 </body>
 
