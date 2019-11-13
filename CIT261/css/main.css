@@ -216,5 +216,10 @@ footer {
     margin: 1rem auto;
     padding: 1rem;
     max-width: 1000px;
-    text-align: center;
+    align-content: center;
+}
+
+ul,
+li {
+    text-align: left;
 }
