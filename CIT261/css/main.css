@@ -208,3 +208,13 @@ a.example3:hover {
 #topic2code {
     width: 70%;
 }
+
+header,
+body,
+main,
+footer {
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 1000px;
+    text-align: center;
+}
