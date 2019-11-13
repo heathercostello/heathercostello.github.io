@@ -169,3 +169,35 @@ a.example3:hover {
 .hide {
     visibility: hidden;
 }
+
+
+/* TOPIC 1 */
+
+#ExampleCode {
+    width: 400px;
+}
+
+
+/* TOPIC 3 */
+
+#JSONcode {
+    width: 70%;
+}
+
+#example {
+    border-style: double;
+    border-collapse: orange;
+    border-width: 4px;
+    text-align: center;
+}
+
+
+/* TOPIC 5 */
+
+#topic5code {
+    width: 30%;
+}
+
+#topic5code2 {
+    width: 70%;
+}

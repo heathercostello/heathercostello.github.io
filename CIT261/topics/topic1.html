@@ -12,12 +12,85 @@
 <body>
     <h1>JavaScript</h1>
     <h2>Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</h2>
+    <h2>JavaScript is used to program the <b>behavior</b> of web pages</h2>
+
+    <h3>JavaScript Loops</h3>
+    <p>Loops are used to execute a block of code over and over while a certain condition applies.</p>
+
+    <ul>
+        <li>For Loops -Used when you know in advance how many times the script should run</li>
+        <li>For/In Loops -Loops through the properties of an object</li>
+        <li>While Loops -Used when you want to loop to execute and continue executing while the specified condition is true</li>
+        <li>While Do Loops -Will execute the code block once, before checking if the condition is ture and then it will repeat the loop as long as the condition is true.</li>
+    </ul>
+    <h4>Example of a While Loop</h4>
+    <p id="example"></p>
+    <img id="ExampleCode" src="../images/while_loop.png" alt="whileLoop">
+    <hr>
+
+    <h3>Conditional Statements</h3>
+    <p>Very often when you write code, you want to perform different actions for different decisions.<br> You can use conditional statements in your code to do this.</p>
+
+    <ul>
+        <li>Use <b>if</b> to specify a block of code to be executed, if a specified condition is true</li>
+        <li>Use <b>else</b> to specify a block of code to be executed, if the same condition is false</li>
+        <li>Use <b>else if</b> to specify a new condition to test, if the first condition is false</li>
+        <li>Use <b>switch</b> to specify many alternative blocks of code to be executed</li>
+    </ul>
+    <h4>Example of a conditional statement</h4>
+    <p>We use conditional statements in our lives every day, for example, when one turns 16 they can get their license IF they have had their permit for six months and are at the age of 16. Lets put this in a function.
+
+    </p>
+    <p>Can you get your license?<br> How old are you? <input type="text" id="driverAge"><br> How many months have you had your permit for?<input type="text" id="permit"><br> Can you get your license? <button type="button" onclick="canDrive()">Let's find out</button>
+        </button><br> Outcome:
+        <div id="outcome"></div>
+    </p>
+
+    <hr>
+
+    <h3>Functions, Variables, and Parameters</h3>
+    <p>A <b>Function</b> is a block of code designed to perform a particular task. It can only be executed when something calls it. There are a variety of different types of functions.</p>
+    <img src="../images/function_syntax.png" alt="functionExample">
+
+    <p><b>Variables</b> are containers for storing data values</p>
+
+    <p>var day1 = 5;<br> var day2 = 6;<br> var total = day1 + day2;</p>
+
+    <p><b>Parameters</b> are containers for storing data values</p>
+    <p>Function parameters are the names listed in the function definition.</p>
+    <h4>Parameter Rules</h4>
+    <ul>
+        <li>JavaScript function definitions do not specify data types for parameters.</li>
+
+        <li>JavaScript functions do not perform type checking on the passed arguments.</li>
+
+        <li>JavaScript functions do not check the number of arguments received.</li>
+    </ul>
+
+    <hr>
 
 
+    <h3>Arrays</h3>
+    <p>An array is a special variable, which can hold more than one value at a time.<br> If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+    <p>You can access the values by referring to an index number. The starting value in an array is 0.</p>
+    <p>An example of an array:</p>
+    <p>var cars = ["Toyota" "Volvo" "Ford"]</p>
+    <p>Calling a index of an array"</p>
+    <p>cars[2] = "Ford";</p>
+    <hr>
+
+    <h3>Associative Arrays</h3>
+    <p>Associative Arrays are dynamic objects that the user redefines as needed. When you assign values to keys in a variable of type Array, the array is transformed into an object, and it loses the attributes and methods of Array. The length attribute has
+        no effect because the variable is not longer of Array type.</p>
+
+    <p>An example of an associative array:</p>
+    <img src="../images/associativeArray.png" alt="associativeArray">
+    <hr>
+    <hr>
     <footer>
         <p>&copy; 2019 - Heather Renee Costello - Arizona -
             <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
-        <script src=""></script>
+        <script src="../scripts/topic1.js"></script>
     </footer>
 </body>
 

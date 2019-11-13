@@ -12,12 +12,34 @@
 <body>
     <h1>Local Storage</h1>
     <h2>Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</h2>
+    <hr>
+    <p>Web and local storage have come a long way. There are two types of storage for storing data.<br> local storage and session storage.</p>
+    <p>window.localStorage - stores data with no expiration date which means that it can store it forever</p>
+    <p>window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)</p>
+    <p>As a good practice, one should check the browser support for localStorage and sessionStorage before trying to store a lot of data.
+    </p>
+    <img id="topic5code" src="../images/topic5_check_browser.png" alt="topic5_check_browser">
+    <hr>
+    <h3>Example of localStorage</h3>
+    <img id="topic5code2" src="../images/topic5_localStorage_code.png" alt="topic5_localStorage_code">
+    <div id="local"></div>
+    <hr>
+
+    <h3>Example of sessionStorage Object</h3>
+    <p>Again, the sessionStorage object is equal to the localStorage object, except that it stores the data for only one session. The data is deleted when the user closes the specific browser tab.</p>
+    <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+    <div id="result"></div>
+    <p>Click the button to see the counter increase.</p>
+    <p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+    <img id="topic5code2" src="../images/topic5_sessionStorage.png" alt="topic5_sessionStorage">
+    <hr>
+
 
 
     <footer>
         <p>&copy; 2019 - Heather Renee Costello - Arizona -
             <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
-        <script src=""></script>
+        <script src="../scripts/topic5.js"></script>
     </footer>
 </body>
 
