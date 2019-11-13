@@ -158,3 +158,14 @@ a.example3:hover {
 #topic13htmlcode {
     width: 300px;
 }
+
+
+/* TOPIC 9 */
+
+#common {
+    width: 500px;
+}
+
+.hide {
+    visibility: hidden;
+}
