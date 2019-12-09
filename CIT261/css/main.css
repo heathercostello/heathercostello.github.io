@@ -223,3 +223,78 @@ ul,
 li {
     text-align: left;
 }
+
+
+/* Final Project */
+
+#send:hover {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    transition: all 1s ease-out 1s;
+}
+
+#zipBox {
+    height: 30px;
+}
+
+#send {
+    height: 30px;
+}
+
+#final_body {
+    margin: auto;
+    align-content: center;
+}
+
+#question:hover {
+    transform: skewx(15deg) translateX(150px);
+    transform-origin: bottom right;
+}
+
+#marks {
+    background-color: black;
+    color: white;
+    position: relative;
+    width: 300px;
+    -webkit-animation-name: questions;
+    -webkit-animation-duration: 5s;
+    animation-name: questions;
+    animation-duration: 5s;
+    text-align: center;
+}
+
+@keyframes questions {
+    0% {
+        background-color: black;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: bisque;
+        left: 100px;
+        top: 0px;
+    }
+    0% {
+        background-color: black;
+        left: 200px;
+    }
+    75% {
+        background-color: bisque;
+        left: 300px;
+        top: 0px;
+    }
+    100% {
+        background-color: black;
+        left: 400px;
+        top: 0px;
+    }
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    background-color: grey;
+    font-size: 20px;
+}
