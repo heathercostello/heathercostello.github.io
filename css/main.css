@@ -22,7 +22,7 @@ header,
 main,
 footer {
     margin: 1rem auto;
-    padding: .5rem;
+    padding: 1rem;
     max-width: 1000px;
 }
 
@@ -41,6 +41,8 @@ header img {
 
 footer {
     font-size: 1rem;
+    margin: auto;
+    text-align: center;
 }
 
 ul {
