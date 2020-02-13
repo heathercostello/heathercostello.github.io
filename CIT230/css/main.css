@@ -3,6 +3,7 @@ body {
     line-height: 32px;
     font-family: Ubuntu, sans-serif;
     color: rgb(248, 154, 126);
+    text-align: center;
 }
 
 h1 {
@@ -41,9 +42,11 @@ header img {
 
 footer {
     font-size: 1rem;
+    text-align: center;
 }
 
-ul {
+
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -76,4 +79,4 @@ a:hover {
 
 a:active {
     text-decoration: underline;
-}
+} */

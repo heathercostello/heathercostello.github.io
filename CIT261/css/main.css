@@ -216,12 +216,12 @@ footer {
     margin: 1rem auto;
     padding: 1rem;
     max-width: 1000px;
-    align-content: center;
+    text-align: center;
 }
 
-ul,
-li {
-    text-align: left;
+.list261 {
+    display: flex;
+    justify-content: center;
 }
 
 

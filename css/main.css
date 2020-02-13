@@ -2,7 +2,7 @@ body {
     font-size: 16px;
     line-height: 32px;
     font-family: Ubuntu, sans-serif;
-    color: rgb(248, 154, 126);
+    color: black;
 }
 
 h1 {
@@ -64,7 +64,7 @@ li a {
     color: whitesmoke;
 }
 
-a:link {
+ul li a:link {
     text-decoration: none;
 }
 
@@ -78,4 +78,53 @@ a:hover {
 
 a:active {
     text-decoration: underline;
+}
+
+
+/* RESUME */
+
+.canvas-container h1 {
+    color: black;
+    font-size: 3rem;
+}
+
+.canvas-container h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    border-bottom: none;
+    color: black;
+}
+
+.canvas-container body {
+    background: lightgray;
+    color: black;
+}
+
+.canvas-container {
+    margin: 0 auto;
+    /* for centering, feel free to use flexbox or some other method*/
+    box-sizing: border-box;
+    padding: 0.5in;
+    /* controls margins */
+    width: 8.5in;
+    height: 11in;
+    background-color: white;
+    box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
+    color: black;
+}
+
+.multicolumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+
+/* COURSES PAGE */
+
+.courseH2 {
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid rgb(211, 143, 112);
+    color: rgb(211, 143, 112);
 }
