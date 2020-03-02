@@ -10150,8 +10150,6 @@ a.text-dark:hover {
     display: block;
     margin: 0;
     transition: top .3s ease, opacity .3s ease;
-    vertical-align: middle;
-    vertical-align: baseline;
     opacity: 0
 }
 
